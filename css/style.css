@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Raleway", sans-serif;
+    color: black;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.tabs{
+    margin-bottom: 118px;
+}
+
+.tabs__buttons{
+    display: flex;
+}
+
+.tabs__button {
+    padding: 10px 0 11px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #C6CBCD;
+    cursor: pointer;
+    max-width: 203px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 19px;
+
+}
+
+.tabs__button:active {
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+
+}
+
+.tabs__line {
+    border-bottom: 1px solid #C6CBCD;
+    flex: 1;
+}
+
+.tab {
+    display: flex;
+}
+.tab__information{
+    max-width: 700px;
+    padding: 55px 30px 54px 101px;
+    border: 1px solid #C6CBCD;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab__heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 57px;
+}
+
+.tab__description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 26px;
+}
+
+.tab__description:last-of-type{
+    margin-bottom: 0;
+}
+
+
+.tab__btn {
+    background-color: #EC7979;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 84px;
+    max-width: 278px;
+    padding: 16.5px;
+}
+
+.tab__img{
+    max-width: 470px;
+    aspect-ratio: 1 / 0.94;
+}
+
+.tab__image{
+    width: 100%;
+}
+
+.tab__image{
+    object-fit: cover;
+    display: block;
+}
+
+.about__header{
+    margin-bottom: 92px;
+    text-align: center;
+}
+
+.about__title{
+    font-size: 36px;
+    text-transform:uppercase;
+    line-height: 42px;
+    font-weight: 400;
+    margin-bottom: 40px
+}
+
+.about__line{
+    border-top: 1px solid #EC7979;
+    width: 142px;
+    margin: 0 auto 40px;
+}
+
+.about__description{
+    color: #86878B;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.about__features{
+    display: flex;
+    text-align: center;
+}
+
+
+.about__circle{
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__heading{
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 26px;
+    line-height: 33px;
+}
+
+.about__text{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+
+
+
+
+
