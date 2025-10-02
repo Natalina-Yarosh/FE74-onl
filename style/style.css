@@ -1,7 +1,6 @@
 .container{
     width: 1170;
     height: 501;
-    
 }
 .H1{
     width: 1170;
@@ -40,9 +39,10 @@
     margin-top: 92px;
     margin-left: 126px;
     margin-right: 26px;
-    border: 1px solid #E6E7E8;
+    border: 0px solid #E6E7E8;
     overflow-wrap: break-word;
     text-align: center;
+    display: inline-block;
     
 }
 
@@ -58,7 +58,7 @@
     height: 33px;
     margin: 0 auto;
     margin-top: 24px;
-    font-family: Open Sans;
+    font-family: Raleway;
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
