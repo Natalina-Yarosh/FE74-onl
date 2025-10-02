@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.tab {
+    color:#333333;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 156px;
+    text-align: center;
+}
+.tab:first-child{
+    width: 172px;
+    padding-bottom: 10px;
+    border-top: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0 0;
+}
+.box {
+    height: 385px;
+    width: 992px;
+    border: 1px solid #C6CBCD;
+    display: flex;
+   justify-content: space-between; 
+    overflow: hidden;
+}
+.box__text-wrapper {
+    max-width: 594px;
+    display: inline-block;
+    padding: 0 0 0 85px;
+    vertical-align: top;
+}
+.box__title {
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 24px;
+    line-height: 100%;
+    width: 483px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+.box__text {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 100%;
+    width: 483px;
+}
+.box__text:last-of-type {
+    margin-top: 14px;
+    margin-bottom: 38px;
+}
+.box__btn {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-color: #EC7979;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 232px;
+    height: 58px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+.box__image {
+    width: 398px;
+    height: 385px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.info {
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-title {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 40px;
+}
+.line {
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    margin: 0 auto 40px;
+}
+.text {
+    color: #86878B;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 auto;
+    margin-bottom: 92px;
+    
+}
+.box {
+  
+}
+.box__item {
+  display: inline-block;
+  max-width: 371px;
+}
+.box__icon-border {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+}
+.box__icon {
+  margin: 0 auto;
+  }
+.box__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color:black;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+.box__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+    line-height: 21px;
+    margin: 0 auto;
+}
+
