@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features {
+  max-width: 1200px;
+  margin: 40px auto;
+  border: 1px solid #C6CBCD;
+  }
+
+
+.tab__titles:first-child {
+
+}
+
+.tab__title{
+line-height: 41px;;
+font-size: 24px;
+margin-bottom: 57px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+display: inline;
+padding: 8px 16px; 
+text-transform: uppercase;
+}
+
+.image {
+
+}
+
+.tab__button {
+  background-color: #ec7979;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400px;
+  max-width: 270px;
+  margin-top: 84px;
+  border: none;
+  line-height: 25px;
+
+}
+
+/* НИЖНИЙ БЛОК */
+
+.info {
+  text-align: center;
+}
+
+.main__title {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  margin: 118px auto 40px;
+}
+
+/* Линия */
+.info__line {
+  width: 170px;
+  height: 2px;
+  background: #EC7979;
+  margin: 0 auto 40px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #86878B;
+  margin: 32px auto 32px;
+}
+
+/* Секция с иконками */
+.info__group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.info__wrapper-image {
+  width: 80px;              
+  height: 80px;            
+  border-radius: 50%;        
+  border: 1px solid #ec7979; 
+  display: flex;            
+  align-items: center;
+  justify-content: center;
+  margin: 65px auto 20px;
+}
+
+.info__wrapper-properties {
+  width: 58px;
+  height: 58px;
+}
+
+.info__title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 9px;
+
+}
+
+.info__text {
+  font-size: 14px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 25px;
+}
+
+
