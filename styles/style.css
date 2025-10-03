@@ -1,0 +1,90 @@
+.container {
+    width: 1171px;
+    height: 540px;
+    border: 1px solid #c6cbcd;
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    padding-block: 10px 20px;
+    writing-mode: horizontal-tb;
+}
+
+.tabcontent{
+    display: flex-box;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.tabs{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+button{
+    display: inline-block;
+    width: 203px;
+    height: 40px;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+.active{
+    border-right: 1px solid #c6cbcd;
+}
+.text{
+    max-width: 570px;
+    max-height: 84px;
+    margin-top: 55px;
+    margin-left: 100px;
+}
+.text h3{
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+.text h5{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-top: 57px;
+
+}
+.h5{
+    margin-top: 26px;
+}
+img{
+    max-width: 470px;
+    max-height: 500px;
+    border: 0px solid #ffffff;
+    display: inline;
+    margin-left: 600px;
+    margin-top: -348px;
+    
+}
+.Download{
+    max-width: 270px;
+    max-height: 58px;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+
+}
+.Download button{
+    background-color: #EC7979;
+    color: #ffffff;
+    margin-top: 260px;
+    margin-left: 100px;
+}
