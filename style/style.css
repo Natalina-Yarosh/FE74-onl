@@ -5,15 +5,19 @@
   border: 0;
   box-sizing: border-box;
 }
+body {
+  color: #000000;
+}
+.info {
+  text-align: center;
+}
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  text-align: center;
-  color: #000000;
 }
 .info__header {
-  font: 400 36px 'Raleway', sans-serif;
+  font: 400 36px / 42px 'Raleway', sans-serif;
   margin-bottom: 40px;
 }
 .dash {
@@ -22,7 +26,7 @@
   margin: 0 auto 40px;
 }
 .info__subheader {
-  font: 400 18px 'Raleway', sans-serif;
+  font: 400 18px / 21px 'Raleway', sans-serif;
   color: #86878B;
   margin-bottom: 92px;
 }
@@ -31,7 +35,7 @@
   justify-content: space-between;
 }
 .info__item {
-  width: 370px;
+  max-width: 370px;
 }
 .info__image-border {
   border: 1px solid #EC7979;
@@ -44,9 +48,9 @@
   height: 92px;
 }
 .info__item-header {
-  font: 700 24px 'Open Sans', sans-serif;
+  font: 700 24px / 33px 'Open Sans', sans-serif;
   margin-bottom: 26px;
 }
 .info__paragraph {
-  font: 400 18px 'Raleway', sans-serif;
+  font: 400 18px / 21px 'Raleway', sans-serif;
 }
