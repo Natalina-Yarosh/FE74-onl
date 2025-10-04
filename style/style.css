@@ -54,3 +54,63 @@ body {
 .info__paragraph {
   font: 400 18px / 21px 'Raleway', sans-serif;
 }
+.tabs {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.tab {
+  text-decoration: none;
+  font: 400 14px / 19px 'Open Sans', sans-serif;
+  color: #333333;
+  padding: 10px 10px 11px;
+  width: 100%;
+  max-width: 203px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 1px;
+}
+.tab:first-child {
+  border: 1px solid #C6CBCD;  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+  background-color: white;
+}
+.tab__content {
+  display: flex;
+  border: 1px solid #C6CBCD; 
+}
+.tab__text {
+  max-width: 700px;
+  padding: 55px 29px 53px 100px;
+}
+.tab__header {
+  font: 700 30px / 41px 'Open Sans', sans-serif;
+  margin-bottom: 57px;
+}
+.tab__paragraph {
+  font: 400 18px / 21px 'Raleway', sans-serif;
+  margin-bottom: 26px;
+}
+.tab__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+.tab__button {
+  margin-top: 84px;
+  font: 600 18px / 25px 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  background-color: #EC7979;
+  width: 100%;
+  max-width: 270px;
+  padding: 16.5px;
+}
+.tab__image-container {
+  max-width: 470px;
+  max-height: 500px;
+}
+.tab__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
