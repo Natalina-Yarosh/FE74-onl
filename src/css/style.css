@@ -20,25 +20,27 @@ body {
 
 .tabs__blocks {
     display: flex;
-    gap: 9px;
 }
 
 .tabs__block {
-    display: flex;
-    width: 203px;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
+    width: 100%;
+    max-width: 203px;
+    padding: 10px;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     text-decoration: none;
     color: #333333;
     line-height: 19px;
+}
+
+.tabs__block.active {
     border: 1px solid #C6CBCD;
     border-radius: 6px 6px 0 0;
     border-bottom: none;
 }
+
 
 .tabs__wrapper {
     display: flex;
@@ -46,57 +48,52 @@ body {
 }
 
 .tabs__wrapper-text {
+    max-width: 700px;
     padding: 55px 29px 54px 100px;
 }
 
 .tabs__title {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    max-width: 570px;
     line-height: 41px;
     margin-bottom: 57px;
-    height: 40px;
     font-weight: 700;
-
 }
 
-.tabs__text-1 {
+.tabs__text {
     margin-bottom: 26px;
     font-size: 18px;
-    max-width: 570px;
     line-height: 21px;
     font-weight: 400;
     color: #000000;
-}
-
-.tabs__text-2 {
-    font-size: 18px;
-    max-width: 570px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #000000;
+    margin-bottom: 26px;
 }
 
 .btn-wrapper__download {
-    width: 270px;
     margin-top: 84px;
     padding: 17px 0 17px 0;
     background-color: #EC7979;
     border: none;
     cursor: pointer;
+    width: 100%;
+    max-width: 270px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-weight: 600;
 }
 
 .tabs__wrapper-image {
-    width: 470px;
-    height: 500px;
+    width: 100%;
+    max-width: 470px;
 }
 
-.btn-wrapper__text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #FFFFFF;
+.tabs__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 
 /* Следуящая секция */
 
