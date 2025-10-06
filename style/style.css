@@ -2,4 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+
+.tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tabs__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 203px);
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+.tabs__tab {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.tabs__tab:hover {
+  background-color: #f2f2f2;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+}
+
+
+/* .tabs__tab--active {
+  font-weight: 600;
+  border: 1px solid #C6CBCD;
+  border-radius: 5px 5px 0px 0px;
+} */
+
+.tabs__content {
+  border: 1px solid #C6CBCD;
+}
+
+.tabs__pane {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.tabs__text {
+  width: 730px;
+}
+
+.tabs__title {
+  padding-top: 23px;
+  margin: 0px 0px 57px 100px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+
+.tabs__paragraph {
+  margin: 0px 0px 26px 100px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.tabs__button {
+  margin: 0px 0px 54px 100px;
+  width: 270px;
+  height: 58px;
+  background-color: #dc6f6f;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tabs__button:hover {
+  background-color: #c65959;
+}
+
+.tabs__image {
+  background-image: url(/img/statue-of-liberty.png);
+  background-size: cover;
 }
