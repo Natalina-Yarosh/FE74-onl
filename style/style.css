@@ -52,7 +52,7 @@ body {
   flex: 1;
 }
 
-.awesome__wrapper-picture {
+.awesome__wrapper-img {
   border: 1px solid #EC7979;
   width: 92px;
   height: 92px;
@@ -138,7 +138,7 @@ body {
 }
 
 .offer__btn {
-  margin-top: auto;
+  margin-top: 78px;
 }
 
 .btn {
@@ -154,9 +154,8 @@ body {
   border: none;
 }
 
-.offer__wrapper-picture {
-  max-width: 470px;
-  list-style-type: none;
+.offer__wrapper-img {
+  max-width: 470px;  
 }
 
 .offer__img {
