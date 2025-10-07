@@ -1,5 +1,163 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  color: #000000;
+}
+
+.awesome {
+  margin-bottom: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.awesome__tille {
+  font-family: Raleway, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.awesome__line {
+  width: 170px;
+  border-top: 1px solid #ec7979;
+  margin: 0 auto 40px;
+}
+
+.awesome__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878b;
+  text-align: center;
+  margin-bottom: 92px;
+}
+
+.awesome__list {
+  display: flex;
+  gap: 27px;
+}
+
+.awesome__item {
+  flex: 1;
+}
+
+.awesome__wrapper-img {
+  border: 1px solid #ec7979;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awesome__heading {
+  font-family: OpenSans, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.awesome__info {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.offers {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.offers__tabs {
+  display: flex;
+}
+
+.offers__tab {
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 203px;
+  border: none;
+  color: #333333;
+  background-color: transparent;
+}
+
+.offers__tab_active {
+  border: 1px solid #c6cbcd;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.offer {
+  display: flex;
+  border: 1px solid #c6cbcd;
+}
+
+.offer__info {
+  padding: 55px 30px 54px 100px;
+  max-width: 700px;
+}
+
+.offer__title {
+  font-family: OpenSans, sans-serif;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 57px;
+}
+
+.offer__text {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 26px;
+}
+
+.offer__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.offer__btn {
+  margin-top: 78px;
+}
+
+.btn {
+  background-color: #ec7979;
+  color: #ffffff;
+  font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 17px;
+  max-width: 270px;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+.offer__wrapper-img {
+  max-width: 470px;
+}
+
+.offer__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
