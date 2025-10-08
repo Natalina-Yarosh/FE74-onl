@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-.features {
-  max-width: 1200px;
-  margin: 40px auto;
+.tabs {
+  margin-top: 100px;
+  margin-bottom: 118px;
+ }
+
+ .info {
+  margin-bottom: 110px;
  }
 
 .container {
@@ -16,6 +20,7 @@
 }
 
 
+/* TABS BLOCK */
 .tab__item {
   color:#333333;
   display: inline-block;
@@ -26,14 +31,12 @@
   line-height: 19px;
   text-decoration: none;
   text-transform: uppercase;
-  width: 184px;
-  height: 40px;
-  padding: 10px 73px 11px 73px;
+  padding: 10px;
+  width: 100%;
+  max-width: 203px;
 }
 
-.tab__item.active{
-  width: 203px;
-  height: 40px;
+.tab__item.tab__item-active {
   border: 1px solid #C6CBCD;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
@@ -42,46 +45,39 @@
   top: 1.5px; 
   }
 
-.content {
+.tab {
   border: 1px solid #C6CBCD;
   display: flex;
   justify-content: space-between;
 }
 
-.box-text {
-  margin: 55px 100px;
-  text-align: left;
-  margin-right: 29px; 
-  width: 571px;
-  height: 391px;
+.tab__wrapper-text {
+  max-width: 700px;
+  padding: 55px 20px 54px 100px;
+  
 }
 
-.text__heading-title {
+.tab__title {
   font-size: 30px;
   font-family: 'Open Sans';
   font-weight: 700;
   line-height: 41px;
-  padding-bottom: 57px;
+  margin-bottom: 57px;
 }
 
-.text__description {
+.tab__description {
   font-size: 18px;
   font-family: 'Raleway';
   font-weight: 400;
   line-height: 21px;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
 }
 
-.text__description:last-of-type {
-  font-size: 18px;
-  font-family: 'Raleway';
-  font-weight: 400;
-  line-height: 21px;
+.tab__description:last-of-type {
+  margin: 0;
 }
 
-.text__button {
-  width: 270px;
-  height: 58px;
+.tab__button {
   background-color: #EC7979;
   font-size: 18px;
   font-family: 'Open Sans';
@@ -90,85 +86,83 @@
   text-transform: capitalize;
   border: none;
   margin-top: 84px;
+  line-height: 25px;
+  width: 100%;
+  max-width: 270px;
+  padding: 16.5px;
+
 }
 
-.content-image {
-width: 470px;
-height: 500px;;
+.tab__wrapper-image {
+max-width: 470px;;
+}
+
+.tab__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
-
-/* НИЖНИЙ БЛОК */
+/* WHY THIS IS AWESOME BLOCK */
 .info {
   text-align: center;
 }
 
-.main__title {
+.info__main-title {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 42px;
   margin-bottom: 40px;
   text-transform: uppercase;
-  margin: 118px auto 40px;
 }
 
-/* Линия */
-.info__line {
+.line {
   width: 170px;
   height: 2px;
   background: #EC7979;
   margin: 0 auto 40px;
 }
 
-.subtitle {
+.info__subtitle {
   font-size: 18px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: #86878B;
-  margin: 32px auto 32px;
+  margin-bottom: 92px;
 }
 
-/* Секция с иконками */
 .info__group {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 27px;
   }
 
 .info__wrapper-image {
-  width: 80px;              
-  height: 80px;            
+  width: 92px;              
+  height: 92px;            
   border-radius: 50%;        
   border: 1px solid #ec7979; 
   display: flex;            
   align-items: center;
   justify-content: center;
-  margin: 65px auto 20px;
-}
-
-.info__wrapper-properties {
-  width: 58px;
-  height: 58px;
+  margin: 0 auto 24px;
 }
 
 .info__title {
-  font-size: 18px;
-  margin-bottom: 12px;
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 33px;
-  margin-bottom: 9px;
+  margin-bottom: 26px;
 
 }
 
 .info__text {
-  font-size: 14px;
+  font-size: 18px;
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
   line-height: 21px;
-  margin-top: 25px;
 }
