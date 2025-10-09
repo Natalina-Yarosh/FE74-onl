@@ -55,7 +55,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-p.tab__text: :last-of-type: {
+p.tab__text:last-of-type {
     margin-bottom: 0;
 }
 
@@ -103,7 +103,7 @@ p.tab__text: :last-of-type: {
     object-fit: cover;
 }
 
-.section_container {
+.container {
     max-width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
@@ -111,7 +111,7 @@ p.tab__text: :last-of-type: {
 }
 
 .about__heading {
-    margin-top: 118px;
+
     margin-bottom: 40px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -127,14 +127,13 @@ p.tab__text: :last-of-type: {
     width: 170px;
     height: 2px;
     border: 1px solid #ec7979;
-    ;
     margin: 0 auto 40px;
     text-align: center;
 
 
 }
 
-.about__text {
+.about__discription {
 
     margin-bottom: 90px;
     font-family: "Raleway", sans-serif;
@@ -183,7 +182,7 @@ p.tab__text: :last-of-type: {
 .about__text {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     line-height: 21px;
 }
