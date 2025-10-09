@@ -111,7 +111,7 @@ body{
 }
 
 .about{
-    margin-bottom: 60px;
+    margin-bottom: 110px;
 }
 
 .about__header{
@@ -119,7 +119,7 @@ body{
     text-align: center;
 }
 
-.about__title{
+.title{
     font-size: 36px;
     text-transform:uppercase;
     line-height: 42px;
@@ -127,13 +127,13 @@ body{
     margin-bottom: 40px
 }
 
-.about__line{
+.line{
     border-top: 1px solid #EC7979;
     width: 142px;
     margin: 0 auto 40px;
 }
 
-.about__description{
+.description{
     color: #86878B;
     font-size: 18px;
     line-height: 21px;
@@ -143,6 +143,7 @@ body{
 .about__features{
     display: flex;
     text-align: center;
+    column-gap: 27px;
 }
 
 
@@ -180,23 +181,60 @@ body{
     text-align: center;
 }
 
-.about__title{
-    font-size: 36px;
-    text-transform:uppercase;
-    line-height: 42px;
-    font-weight: 400;
-    margin-bottom: 40px
+.price__offer{
+    display: flex;
+    column-gap: 30px;
 }
 
-.about__line{
-    border-top: 1px solid #EC7979;
-    width: 142px;
-    margin: 0 auto 40px;
+.table {
+    max-width: 370px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    border-collapse: collapse;
+    color: #ffF5F5F5;
 }
 
-.about__description{
-    color: #86878B;
+.table:last-of-type{
+    margin-left: 0;
+}
+
+.table__header {
+    background: #333;
+}
+
+th.table__cell--header{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.table__row, .table__cell{
+    border: 2px solid #ffF5F5F5;
+    padding: 14.3px;
+}
+
+.table__row, .table__cell--header{
+    padding: 12.5px;
+}
+
+.table__header .table__row:nth-child(2) .table__cell--header{
+    padding: 32.5px;
+}
+
+.table__cell{
     font-size: 18px;
     line-height: 21px;
+    color: #86878B;
+}
 
+.table__body .table__row:first-of-type{
+    background: #333;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.table:hover{
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    margin-top:-20px
 }
