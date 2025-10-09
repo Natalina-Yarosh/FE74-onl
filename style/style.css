@@ -31,7 +31,6 @@
 .info_item {
     width: 371px;
     text-align: center;
-    display: inline-block;
     margin-top: 92px;
     gap: 27px;
 }
@@ -61,4 +60,12 @@
     font-size: 18px;
     line-height: 21px;
     color: #86878b;
+}
+.info_item_groups {
+    display: flex;
+    justify-content: center; /* ТУТ Я ПОЛЬЗОВАЛСЯ ЧАТОМ ГПТ ИБО В Я ВООБЩЕ НЕ ПОНИМАЛ КАК ЦЕНТРИРОВАТЬ ИТЕМЫ */
+    align-items: flex-start;  
+    gap: 40px;                
+    flex-wrap: wrap;          
+    text-align: center;
 }
