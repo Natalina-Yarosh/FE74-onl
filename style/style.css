@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+font-family: "Raleway", sans-serif;
+}
 
 .tabs {
     margin-bottom: 118px;
@@ -42,7 +45,7 @@
     max-width: 772px;
 
     padding: 55px 59px 54px 100px;
-    font-family: "Raleway", sans-serif;
+    
 }
 
 .tab__title {
@@ -112,11 +115,12 @@ p.tab__text:last-of-type {
 .about__heading {
 
     margin-bottom: 40px;
-    font-family: "Raleway", sans-serif;
+   
     font-weight: 400;
     font-size: 36px;
     text-align: center;
     line-height: 42px;
+    text-transform: uppercase;
 
 
 }
@@ -135,7 +139,7 @@ p.tab__text:last-of-type {
 .about__discription {
 
     margin-bottom: 90px;
-    font-family: "Raleway", sans-serif;
+   
     font-weight: 400;
     font-size: 18px;
     color: #86878b;
@@ -179,22 +183,10 @@ p.tab__text:last-of-type {
 }
 
 .about__text {
-    font-family: "Raleway", sans-serif;
+   
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     line-height: 21px;
 }
 
-.container__2 {
-    max-width: 600px;
-    height: 100%;
-    padding: 40px;
-    background-color: yellowgreen;
-
-}
-
-.info {
-    border: 2px solid wheat;
-    padding: 40px;
-}
