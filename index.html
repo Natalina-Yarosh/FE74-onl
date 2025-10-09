@@ -11,24 +11,27 @@
 </head>
 
 <body>
-    <div class="tabs-container">
-        <div class="tabs-header">
-            <div class="tab active">TAB 1</div>
-            <div class="tab">TAB 2</div>
-            <div class="tab">TAB 3</div>
-        </div>
-        <div class="tabs-content">
-            <div class="tab-pane active">
-                <h3>Tabs with soft transitioning effect.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
-                    gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
-                    sociis natoque penatibus et magnis dis parturient montes.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                <button class="download-btn">Download</button>
+    <div class="tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tabs__link tabs__link_active">TAB 1</button>
+                <button class="tabs__link">TAB 2</button>
+                <button class="tabs__link">TAB 3</button>
             </div>
-        </div>
-        <div class="image-container">
-            <img src="media/image.png" alt="Statue of Liberty">
+            <div class="tab">
+                <div class="tab__content">
+                    <h3 class="tab__title">Tabs with soft transitioning effect.</h3>
+                    <p class="tab__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                        sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p class="tab__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet.</p>
+                    <button class="tab__btn">Download</button>
+                </div>
+                <div class="tab__image-wrapper">
+                    <img src="media/image.png" alt="Statue of Liberty" class="tab__image">
+                </div>
+            </div>
         </div>
     </div>
 </body>
