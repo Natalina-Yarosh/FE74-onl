@@ -3,11 +3,14 @@
     padding: 0 15px;
     margin: 0 auto;
 }
-.H1{
+.title{
     font-family: Raleway;
     font-weight: 400;
+    font-size: 36px;
+    line-height: 33px;
+    margin-bottom: 26px;
+    text-transform: capitalize;
     text-align: center;
-    vertical-align: middle;
 }
 .line{
     border-bottom: 1px solid #EC7979;
@@ -21,21 +24,28 @@
     font-size: 18px;
     text-align: center;
     color: #86878b;
+    line-height: 21px;
+    margin-bottom: 92px;
 }
-
-
+    
 .info_item {
     width: 371px;
     text-align: center;
     display: inline-block;
-    
+    margin-top: 92px;
+    gap: 27px;
 }
 
 .info_img {
+    width: 92px;
+    height: 92px;
     margin: 0 auto 24px;
     border: 1px solid #EC7979;
-    border-radius: 50%
-     
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
 }
 .info_title {
     font-family: Raleway;
@@ -49,7 +59,6 @@
     font-family: Raleway;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;;
+    line-height: 21px;
     color: #86878b;
 }
