@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-font-family: "Raleway", sans-serif;
+
+body {
+    font-family: "Raleway", sans-serif;
 }
 
 .tabs {
@@ -38,14 +39,11 @@ font-family: "Raleway", sans-serif;
 
 }
 
-
-
-
 .tab__wrapper-text {
     max-width: 772px;
 
     padding: 55px 59px 54px 100px;
-    
+
 }
 
 .tab__title {
@@ -70,8 +68,6 @@ p.tab__text:last-of-type {
     color: #000;
 }
 
-
-
 .tab__btn {
     margin-top: 84px;
     line-height: 25px;
@@ -95,8 +91,6 @@ p.tab__text:last-of-type {
 .tab__wrapper-img {
     width: 100%;
     max-width: 470px;
-
-
 }
 
 .tab__img {
@@ -105,26 +99,22 @@ p.tab__text:last-of-type {
     object-fit: cover;
 }
 
-.container {
-    max-width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
+.about {
+    margin-bottom: 82px;
 
 }
 
-.about__heading {
 
+
+.about__heading,
+.title__prise {
     margin-bottom: 40px;
-   
     font-weight: 400;
     font-size: 36px;
     text-align: center;
     line-height: 42px;
     text-transform: uppercase;
-
-
 }
-
 
 .about__line {
     width: 170px;
@@ -132,14 +122,11 @@ p.tab__text:last-of-type {
     border: 1px solid #ec7979;
     margin: 0 auto 40px;
     text-align: center;
-
-
 }
 
-.about__discription {
-
+.about__discription,
+.about__discription__prise {
     margin-bottom: 90px;
-   
     font-weight: 400;
     font-size: 18px;
     color: #86878b;
@@ -156,10 +143,6 @@ p.tab__text:last-of-type {
 .about__item {
     max-width: 372px;
     width: 100%;
-    /* max-height: 259px;
-   height: 100%; */
-
-
 }
 
 .about__wrapper-image {
@@ -183,10 +166,78 @@ p.tab__text:last-of-type {
 }
 
 .about__text {
-   
+
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     line-height: 21px;
 }
 
+
+
+.container_prise {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 83px 15px;
+    background-color: #f5f5f5;
+}
+
+.wrapper__prise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.card__header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+}
+
+.box__name {
+    width: 370px;
+    padding: 15px;
+    border-bottom: 2px solid #f5f5f5;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+
+
+}
+
+.box__prise {
+    width: 370px;
+    padding: 28px;
+    border-bottom: 2px solid #f5f5f5;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.box__term {
+    width: 370px;
+    padding: 15px;
+    border-bottom: 2px solid #f5f5f5;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.card__features li {
+    list-style: none;
+    width: 370px;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 2px solid #f5f5f5;
+    color: #86878b;
+    background-color: #fff;
+    text-align: center;
+}
+.pricing__cards:hover{
+    transform: translateY(-24px);
+filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
