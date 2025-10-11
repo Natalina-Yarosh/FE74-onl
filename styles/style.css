@@ -9,6 +9,9 @@
     padding: 0 15px;
    
 }
+.tabs{
+    margin-bottom: 118px;
+}
 .tab__link{
     display: inline-block;
     max-width: 203px;
