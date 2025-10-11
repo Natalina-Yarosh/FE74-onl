@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway",sans-serif;
+    font-weight: 400;
 }
 
 .features{
@@ -22,6 +27,7 @@
     display: flex;
 }
 
+
 .features__tab {
     width:100%;
     max-width: 203px;
@@ -35,15 +41,30 @@
     padding: 10px;
 }
 
+
 .features__tab:first-child {
     border: 1px solid #C6CBCD;
     border-bottom: none;
+    position: relative;
+}
+
+.features__tab:first-child::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 20px;
+    left: 0;
+    bottom: -20px;
 }
 
 .feature {
     border: 1px solid #C6CBCD;
     display: flex;
 }
+
+
 
 .feature__wrapper-info {
     max-width: 700px;
@@ -96,3 +117,319 @@
      object-fit: cover;
      
 }
+
+
+.promo {
+    margin-bottom: 110px;
+}
+
+.promo__heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    margin-bottom: 80px;
+    padding: 2px 0;
+}
+
+.promo__heading::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    top: calc(100% + 40px);
+    left: calc(50% - 85px);
+    position: absolute;
+
+}
+
+.promo__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 92px;
+    padding: 1.5px 0;
+}
+
+.promo__list {
+    display: flex;
+    column-gap: 27px;
+}
+
+.card {
+    max-width: 371px;
+    width: 100%;
+}
+
+.card__wrapper-image {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.card__image {
+    overflow: hidden;
+}
+
+.card__heading {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.card__info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    }
+
+
+
+.offers {
+    margin-bottom: 107px;
+    padding: 82px 0;
+    background-color: #F5F5F5;
+}
+
+.offers__heading {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000; 
+    margin-bottom: 80px;
+    padding: 2px 0;
+    position: relative;
+
+    
+}
+
+.offers__heading::after {
+    content: "";
+    display: inline-block;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979 ;
+    position: absolute;
+    top:calc(100% + 40px);
+    left:calc(50% - 85px);
+}
+
+
+.offers__text {
+
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 79px;
+}
+
+.offers__wrapper {
+    display: flex;
+    column-gap: 30px;
+
+}
+
+.offer {
+    max-width: 370px;
+    width: 100%;
+}
+
+.offer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.offer__heading {
+    background-color: #333333;
+    color:#fff;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 2px solid #F5F5F5;
+    padding: 12px 0;
+    
+}
+
+
+
+.offer__price {
+    background-color: #333333;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color:#fff;
+    border: 1px solid #F5F5F5;
+    padding: 28px 0px;
+}
+
+
+    .offer__text {
+    background-color: #333333;        
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF80;
+    border: 2px solid #F5F5F5;
+    padding: 13px 0;
+    }
+
+    .offer__list {
+       list-style-type: none;
+       
+    }
+
+    .offer__list-item {
+        background-color:#fff;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #86878B;
+        border: 2px solid #F5F5F5;
+        padding: 13px 0;
+    }
+
+    .offer:nth-of-type(2) {
+        position: relative;
+        top:-20px;
+    }
+
+
+
+
+
+
+.speakers__heading {
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000;
+    margin-bottom: 80px;
+    position: relative;
+    font-weight: 400;
+}
+
+.speakers__heading::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    position: absolute;
+    display: inline-block;
+    top: calc(100% + 40px);
+    left: calc(50% - 85px);
+}
+
+.speakers__text {
+
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:#86878B;
+    margin-bottom: 83px;
+}
+
+.speakers__wrapper {
+    display: flex;
+    column-gap: 30px;
+
+}
+
+.speaker {
+   max-width: 370px; 
+   width: 100%;
+}
+
+
+.speaker__info {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:#86878B;
+    background-color: #E2E2E2;
+    padding: 38px 25px 37px;
+    border-radius: 10px;
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.speaker__info::after {
+    content: "";
+    top: 100%;
+    left: 80px;
+    position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+}
+
+.speaker__profile {
+    /* max-width: 100%; */
+    display: flex;
+    column-gap: 30px;
+}
+
+
+.image__wrapper {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .speaker__wrapper-info {
+    max-width: 270px;
+    width: 100%;
+
+} 
+
+.speaker__name {
+font-family: "Open Sans", sans-serif;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+text-transform: capitalize;
+color: #000;
+margin-bottom: 18px;
+}
+
+.speaker__post {
+font-size: 18px;
+line-height: 21px;
+color: #000;
+}
+
