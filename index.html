@@ -1,15 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Axit project</title>
+    <title>Sections</title>
+        <link rel="stylesheet" href="/style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
+    <!-- Блок  секции "tabs"-->
+        <div class = "info">
+            <div class="container">
+                <div class="info__tabs">
+                    <a class="info__tab" href="">Tab 1</a>
+                    <a class="info__tab" href="">Tab 2</a>
+                    <a class="info__tab" href="">Tab 3</a>
+                </div>
+                <div class="box">
+                    <div class="box__wrapper-text">
+                        <h3 class="box__title"></h3>
+                        <p class="box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque  penatibus et magnis dis parturient montes.
+                        </p>
+                        <p class="box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet.
+                        </p>
+                        <button class="box__button">Download</button>
+                    </div>
+                    <div class="box__wrapper-image">
+                        <img class="box__image" src="/images/img.png" alt="image error">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    <!-- Блок awesome-->
+    <div class="info awesome-section">
+        <section class = "info">
+            <div class="container">
+                <h2 class="title">WHY THIS IS AWESOME</h2>
+                <div class="line"></div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="cards">
+
+                    <!-- Первая карточка -->
+                <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/images/icon_1.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image1">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                        </p>
+                    </div>
+
+                    <!-- Вторая карточка -->
+                    <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/images/icon_2.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image2">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                        </p>
+                    </div>
+
+                    <!-- Третья карточка -->
+                    <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/images/icon_3.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image3">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Блок 'Pricing options'-->
+        <section class = "pricing info">
+            <div class="container">
+                <h2 class="title">PRICING OPTIONS</h2>
+                <div class="line"></div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="pricing-cards">
+                    <div class="pricing-card">
+                        <div>
+                            <h3 class="pricing-card__header">Basic</h3>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span>$10</span>
+                        </div>
+                        <div class="pricing-card__description">
+                            <p>Free for life</p>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card pricing-card--center">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Optima</h3>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">$20</span>
+                        </div>
+                        <div class="pricing-card__description">
+                            Free for life
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Pro</h3>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">$30</span>
+                        </div>
+                        <div class="pricing-card__description">
+                            Free for life
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
 </body>
-
 </html>
