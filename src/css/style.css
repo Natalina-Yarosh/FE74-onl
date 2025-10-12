@@ -343,6 +343,7 @@ body {
 }
 
 .person__title {
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 18px;
     font-weight: 700;
     font-size: 24px;
