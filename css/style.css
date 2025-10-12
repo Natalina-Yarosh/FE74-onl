@@ -1,4 +1,5 @@
 :root {
+    /* Цвета */
     --color-text-primary: #000;
     --color-text-secondar: #86878B;
     --color-border-primary: #C6CBCD;
@@ -6,7 +7,20 @@
     --color-border-table: #F5F5F5;
     --color-background-primary: #fff;
     --color-background-secondar:#E2E2E2;
-
+    --color-background-heder-table:#333;
+    /* Размеры шрифтов */
+    --font-size-xs: 14px;
+    --font-size-base: 18px;
+    --font-size-lg: 24px;
+    --font-size-xl: 30px;
+    --font-size-2xl: 36px;
+    /* Насыщенность*/
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    /* Семейства шрифтов */
+    --font-family-primary: "Raleway", sans-serif;
+    --font-family-secondar: "Open Sans", sans-serif;
 }
 
 *{
@@ -15,7 +29,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Raleway", sans-serif;
+    font-family: var(--font-family-primary);
     color: var(--color-text-primary);
 }
 
@@ -43,7 +57,7 @@ body{
     cursor: pointer;
     max-width: 203px;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--font-size-xs);
     line-height: 18px;
 
 }
@@ -80,16 +94,16 @@ body{
 }
 
 .tab__heading {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
+    font-family: var(--font-family-secondar);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
     line-height: 40px;
     margin-bottom: 57px;
 }
 
 .tab__description{
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-base);
     line-height: 21px;
     margin-bottom: 26px;
 }
@@ -102,9 +116,9 @@ body{
 .tab__btn {
     background-color: var(--color-border-secondar);
     color: var(--color-background-primary);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-family: var(--font-family-secondar);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
     line-height: 25px;
     border: none;
     cursor: pointer;
@@ -139,10 +153,10 @@ body{
 }
 
 .title{
-    font-size: 36px;
+    font-size: var(--font-size-2xl);
     text-transform:uppercase;
     line-height: 42px;
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
     margin-bottom: 80px;
     position: relative;
 
@@ -160,7 +174,7 @@ body{
 
 .description{
     color: var(--color-text-secondar);
-    font-size: 18px;
+    font-size: var(--font-size-base);
     line-height: 21px;
 
 }
@@ -184,15 +198,15 @@ body{
 }
 
 .about__heading{
-    font-size: 24px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-family-secondar);
+    font-weight: var(--font-weight-bold);
     margin-bottom: 26px;
     line-height: 33px;
 }
 
 .about__text{
-    font-size: 18px;
+    font-size: var(--font-size-base);
     line-height: 21px;
 }
 
@@ -227,12 +241,12 @@ body{
 }
 
 .table__header {
-    background: #333;
+    background: var(--color-background-heder-table);
 }
 
 th.table__cell--header{
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
     line-height: 33px;
 }
 
@@ -250,13 +264,13 @@ th.table__cell--header{
 }
 
 .table__cell{
-    font-size: 18px;
+    font-size: var(--font-size-base);
     line-height: 21px;
     color: var(--color-text-secondar);
 }
 
 .table__body .table__row:first-of-type{
-    background: #333;
+    background: var(--color-background-heder-table);
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -293,7 +307,7 @@ th.table__cell--header{
 }
 
 .customers__text {
-    font-size: 18px;
+    font-size: var(--font-size-base);
     line-height: 21px;
     padding: 38px 25px;
     text-align: center;
@@ -309,6 +323,15 @@ th.table__cell--header{
 
 .customers__heading {
     margin-bottom: 18px;
+    font-family: var(--font-family-secondar);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    line-height: 30px;
+}
+
+.customers__property{
+    font-size: var(--font-size-base);
+    line-height: 21px;
 }
 
 .customers {
