@@ -36,10 +36,23 @@ body {
     line-height: 19px;
 }
 
-.tabs__block.active {
+.tabs__block_active {
     border: 1px solid #C6CBCD;
     border-radius: 6px 6px 0 0;
     border-bottom: none;
+    position: relative;
+}
+
+.tabs__block_active::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 5px;
+
+    position: absolute;
+    left: 0;
+    bottom: -2px;
 }
 
 
