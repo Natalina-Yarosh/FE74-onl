@@ -14,9 +14,10 @@
     color: #333333;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 14 px;
-    line-height: 100%;
+    font-size: 14px;
+    line-height: 19px;
     text-transform: uppercase;
+    text-decoration: none;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -38,7 +39,7 @@
     overflow: hidden;
 }
 
-.info__wrapper-text {
+.box__wrapper-text {
     max-width: 700px;
     display: inline-block;
     padding: 55px 29px 54px 100px;
@@ -46,17 +47,17 @@
 }
 
 .box__title {
-    color: O#000000;
+    color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 41px;
     margin-bottom: 57px;
 }
 
 .box__text {
-    color: O#000000;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
