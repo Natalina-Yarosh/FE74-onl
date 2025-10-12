@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h2{
+.info__main_title{
     font-size: 36px;
     text-align: center;
     font-family: "Raleway", sans-serif;
@@ -35,7 +35,6 @@ h2{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     line-height: 21px;
-    flex: 1;
 }
 .info__text-container{
     text-align: center;
@@ -55,6 +54,9 @@ h2{
     margin: 0 auto 24px;
     border: 1px solid #EC7979;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .info__title{
     margin-bottom: 26px;
@@ -69,21 +71,10 @@ h2{
     font-weight: 400;
     line-height: 21px;
 }
-#img1{
-    padding: 8px 0px 0px 0px;
-}
-#img2{
-    padding: 23px 13px;
-    overflow: visible;
-}
-#img3{
-    padding: 13px 22px 13px 26px;
-    overflow: visible;
-}
-.info-2 {
+.tabs {
     margin-bottom: 118px;
 }
-.info-2__tab{
+.tabs__link{
     display: inline-block;
     color: #000;
     text-decoration: none;
@@ -100,48 +91,46 @@ h2{
     max-width: 203px;
     padding: 10px;
 }
-.info-2__content-wrapper{
+.tab{
     display: flex;
     border: 1px solid #C6CBCD;
 }
-.info-2__text-wrapper{
+.tab__wrapper-text{
     
     max-width: 700px;
     padding: 55px 29px 54px 100px;
 
 }
-.info-2__title{
+.tab__title{
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 57px;
 }
-.info-2__text-1{
+.tab__text-1{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 26px;
     line-height: 21px;
 }
-.info-2__text-2{
+.tab__text-2{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
-.info-2__image-wrapper{
+.tab__wrapper-image{
     flex: 1;
     max-width: 470px;
     display: flex;
 }
-.info-2__image{
+.tab__image{
     width: 100%;
     height: auto;
     object-fit: cover;
-    display: block;
-    align-self: stretch;
 }
-.info-2__button{
+.tab__button{
     margin-top: 84px;
     border: none;
     background-color: #EC7979;
@@ -152,7 +141,5 @@ h2{
     line-height: 25px;
     width: 100%;
     max-width: 270px;
-    max-height: 58px;
-    height: 100%;
-    padding: 16.5 px;
+    padding: 16.5px;
 }
