@@ -13,19 +13,21 @@
 </head>
 
 <body>
-    <section class="tabs">
-        <div class="tabs__nav">
-            <button class="tabs__tab tabs__tab--active">TAB 1</button>
-            <button class="tabs__tab ">TAB 2</button>
-            <button class="tabs__tab ">TAB 3</button>
-        </div>
+    <div class="tabs">
+        <div class="container">
+            <div class="tabs__nav">
+                <button class="tabs__item tabs__item--active">TAB 1</button>
+                <button class="tabs__item">TAB 2</button>
+                <button class="tabs__item">TAB 3</button>
+            </div>
 
-        <div class="tabs__content">
             <div class="tabs__pane">
-                <div class="tabs__text">
-                    <h2 class="tabs__title">Tabs with soft transitioning effect.</h2>
-                    <p class="tabs__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                <div class="tabs__wrapper-text">
+                    <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                    <p class="tabs__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        euismod
+                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                        Proin
                         sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                     <p class="tabs__paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
@@ -33,10 +35,13 @@
                     </p>
                     <button class="tabs__button">Download</button>
                 </div>
-                <div class="tabs__image"> 
+                <div class="tabs__wrapper-image">
+                    <img class="tabs__image" src="/img/statue-of-liberty.png" alt="statue-of-liberty">
+                </div>
             </div>
+
         </div>
-    </section>
+    </div>
 </body>
 
 </html>
