@@ -106,8 +106,8 @@ p.tab__text:last-of-type {
 
 
 .about__heading,
-.title__prise,
-.title__content {
+.prising__title,
+.feedback__title {
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 36px;
@@ -116,7 +116,9 @@ p.tab__text:last-of-type {
     text-transform: uppercase;
 }
 
-.about__line {
+.about__line,
+.prising__line,
+.feedbacks__line {
     width: 170px;
     height: 2px;
     border: 1px solid #ec7979;
@@ -125,7 +127,8 @@ p.tab__text:last-of-type {
 }
 
 .about__discription,
-.about__discription__prise {
+.prising__discription,
+.feedbacks__text {
     margin-bottom: 90px;
     font-weight: 400;
     font-size: 18px;
@@ -166,112 +169,124 @@ p.tab__text:last-of-type {
 }
 
 .about__text {
-
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     line-height: 21px;
 }
-.container_prise {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 83px 15px;
+
+/* прайс */
+
+.pricing {
+    /* max-width: 100%;
+    margin: 0 auto; */
+    padding: 83px 0;
     background-color: #f5f5f5;
+    margin-bottom: 107px;
 }
 
-.wrapper__prise {
+.prising__plans {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    /* align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     gap: 30px;
 }
 
 
-.card__header {
+.pricing__header {
     background-color: #333;
     color: #fff;
     text-align: center;
 
 }
 
-.box__name {
-    width: 370px;
-    padding: 15px;
+.pricing__name {
+    /* width: 370px; */
+    padding: 13px;
     border-bottom: 2px solid #f5f5f5;
     font-weight: 700;
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
-
-
+    line-height: 33px;
 }
 
-.box__prise {
-    width: 370px;
+.pricing__coast {
+    /* width: 370px; */
     padding: 28px;
     border-bottom: 2px solid #f5f5f5;
     font-weight: 700;
     font-size: 36px;
+    line-height: 42px;
 }
 
-.box__term {
-    width: 370px;
-    padding: 15px;
+.pricing__duration {
+    /* width: 370px; */
+    padding: 14px;
     border-bottom: 2px solid #f5f5f5;
     font-weight: 400;
     font-size: 18px;
+    opacity: 0.5;
 
 }
 
-.card__features li {
+.pricing__list li {
     list-style: none;
-    width: 370px;
-    padding: 15px;
+    /* width: 370px; */
+    padding: 14px;
     font-weight: 400;
     font-size: 18px;
     border-bottom: 2px solid #f5f5f5;
     color: #86878b;
     background-color: #fff;
     text-align: center;
+    line-height: 21px;
 }
 
-.pricing__cards:hover {
+.pricing__plan {
+    width: 100%;
+    max-width: 370px;
+}
+
+.pricing__plan:hover {
     transform: translateY(-24px);
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 
-
-
- .text {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    color: #86878B;
-    margin-bottom: 83px;
-} 
-.wrapper__feedback {
-max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    padding-top: 107px;
-
-}
-
-.wrapper__comment {
-    background-color: #e2e2e2;
-    color: #86878B;
-    padding: 38px 25px;
-    border-radius: 16px;
-    max-width: 370px;
-    line-height: 21px;
-    position: relative;
+/* Отзывы */
+.feedbacks {
     margin-bottom: 66px;
 
 }
 
+article .feedback {
+    width: 100%;
+    max-width: 370px;
+}
+
+
+.feedback__text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    /* margin-bottom: 83px; */
+}
+
+
+.feedback__wrapper-text {
+    background-color: #e2e2e2;
+    padding: 38px 25px;
+    border-radius: 16px;
+    position: relative;
+    margin-bottom: 66px;
+
+
+}
+
 /* треугольник */
-.wrapper__comment::after {
+.feedback__wrapper-text::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -283,39 +298,48 @@ max-width: 1200px;
     border-top: 20px solid #e2e2e2;
 }
 
-.wrapper_message {
+.feedbacks__list {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    text-align: center;
-    flex-wrap: wrap;
+    /* text-align: center; */
     gap: 30px;
-    margin-bottom: 66px;
-
 }
-.comment{
+
+.feedback__text {
     font-weight: 400;
     font-size: 18px;
     color: #86878B;
     line-height: 21px;
 }
 
-.photo {
+.feedback__wrapper-photo {
     width: 70px;
     height: 70px;
-    border-radius: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.about__author {
+.feedback__author {
     display: flex;
-   
+    column-gap: 30px;
+
 }
-.wrapper__info-autor {
-    margin-left: 30px;
+
+.feedback__info {
+    /* margin-left: 30px;
     position: relative;
-    text-align: left;
+    text-align: left;    */
+    flex-grow: 1;
 }
-.name {
+
+.feedback-name {
     margin-bottom: 19px;
     font-weight: 700;
     font-size: 24px;
@@ -323,8 +347,10 @@ max-width: 1200px;
     font-family: "Open Sans", sans-serif;
     color: #000;
 }
-.role{
-font-weight: 400;
-font-size: 18px;
-color: #000;
+
+.feedback-role {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    line-height: 21px;
 }
