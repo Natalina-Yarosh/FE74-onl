@@ -68,12 +68,12 @@ body {
   max-width: 203px;
   display: inline-block;
   text-align: center;
-  border: 1px solid #FFF;  
+  border: 1px solid transparent;  
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .tabs__link_active {
   border: 1px solid #C6CBCD;  
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   position: relative;
 }
 .tabs__link_active::after {
