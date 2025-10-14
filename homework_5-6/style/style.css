@@ -260,32 +260,36 @@
         margin-bottom: 83px;
       }
 
-      .opinions-cards {
+      .opinions-list {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
       }
 
-      .opinions__card {
+      .opinion {
       flex: 0 0 370px;
       max-width: 100%;
       text-align: center;
       }
 
-      .opinions__wrapper-text {
+        .opinion__text {
+        color: #86878B;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        }
+
+      .opinion__wrapper-text {
       background-color: #E2E2E2;
       padding: 38px 25px;
       border-radius: 10px;
       position: relative;
       margin-bottom: 66px;
-      color: #86878B;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 21px;
+      
     }
 
-      .opinions__wrapper-text::after {
+      .opinion__wrapper-text::after {
       content: '';
       border-right: 15px solid transparent;
       border-left: 15px solid transparent;
@@ -295,26 +299,30 @@
       left: 70px;
     }
 
-      .opinions__wrapper-person {
+    .opinion____wrapper-info {
+     flex-grow: 1;
+    }
+
+      .opinion___wrapper-person {
       display: flex;
       align-items: center;
       gap: 30px;
     }
 
-      .opinions__wrapper-img {
+      .opinion___wrapper-img {
       width: 70px;
       height: 70px;
       border-radius: 50%;
       overflow: hidden;
     }
 
-      .opinions__img {
+      .opinion___img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-      .opinions__name {
+      .opinion____name {
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       line-height: 30px;
@@ -323,7 +331,7 @@
       color: #000000;
     }
 
-      .opinions__profession {
+      .opinion____profession {
       font-size: 18px;
       font-weight: 400;
       line-height: 21px;
