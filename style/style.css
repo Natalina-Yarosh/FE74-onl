@@ -17,7 +17,7 @@
   --border-color: #c6cbcd;
 
   --accent-color: #ec7979;
-  --active-color: #AB4949;  
+  --active-color: #AB4949;
 }
 
 body {
@@ -211,7 +211,7 @@ body {
 }
 
 .price {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-1);
   margin-bottom: 100px;
   padding: 82px 0;
 }
@@ -231,7 +231,7 @@ body {
 
 .tariff {
   text-align: center;
-  border: 2px solid var(--bg-color-1);
+  border-collapse: collapse;
 }
 
 .tariff:hover {
@@ -241,7 +241,7 @@ body {
 
 .tariff__thead {
   background-color: var(--text-color-1);
-  color: #FFFFFF;
+  color: var(--basic-color-2);
 }
 
 .tariff__name th {
@@ -250,6 +250,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   padding: 9px 10px;
+  border: 2px solid var(--bg-color-1);
 }
 
 .tariff__price th {
@@ -257,6 +258,7 @@ body {
   font-size: 36px;
   line-height: 42px;
   padding: 29px 10px;
+  border: 2px solid var(--bg-color-1);
 }
 
 .tariff__period th {
@@ -265,6 +267,7 @@ body {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
   padding: 15px 10px;
+  border: 2px solid var(--bg-color-1);
 }
 
 .tariff__info td {
@@ -273,9 +276,10 @@ body {
   line-height: 20px;
   color: var(--text-color-2);
   background-color: #FFFFFF;
+  border: 2px solid var(--bg-color-1);
 }
 
-.review {
+.reviews {
   margin-bottom: 100px;
 }
 
@@ -321,6 +325,10 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+}
+
+.review__person-info {
+  flex-grow: 1;
 }
 
 .review__wrapper-img {
