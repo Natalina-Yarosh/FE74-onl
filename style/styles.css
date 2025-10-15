@@ -35,6 +35,46 @@ body {
   margin-bottom: 107px;
 }
 
+
+/* HEADER */
+.header {
+  height: 75px;
+  background: #000000;
+  padding: 22px 0;
+ }
+
+ .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.logo {
+  width: 87px;
+  height: 31px;
+ 
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  column-gap: 30.8px;
+}
+
+.nav__link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+
+/* HEADER BACKGROUND */
+
+
+
 /* TABS BLOCK */
 .tab__item {
   color:#333333;
@@ -283,6 +323,7 @@ align-items: flex-start;
 .price__tarif-description li:last-child {
   border-bottom: none;
 }
+
 
 /* WHAT OUR CUSTOMERS ARE SAYING */
 .feedback__wrapper-text {
