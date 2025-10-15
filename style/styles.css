@@ -504,7 +504,31 @@ align-items: flex-start;
 }
 
 
+/* FOOTER */
 
+.footer {
+  background-color: #000;
+  /* height: 164px; */
+  padding-top: 35px;
+  padding-bottom: 27px;;
+}
 
+.footer__links {
+  display: flex;
+  justify-content: center;
+  column-gap: 32.8px;
+  margin-bottom: 27.8px;
+}
 
+.footer__link-icon {
+  width: 53.2px;
+  height: 53.2px;
+}
 
+.footer__copyright {
+  font-size: 18px;
+  color: #fff;
+  line-height: 21px;
+  text-align: center;
+  opacity: 0.5;
+}
