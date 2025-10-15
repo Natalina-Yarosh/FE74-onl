@@ -19,28 +19,48 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link">Features</a>
+                <a href="#tabs" class="nav__link">Features</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">About</a>
+                <a href="#info" class="nav__link">About</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Pricing</a>
+                <a href="#price" class="nav__link">Pricing</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Reviews</a>
+                <a href="#feedback" class="nav__link">Reviews</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Contact</a>
+                <a href="#contacts" class="nav__link">Contact</a>
               </li>
             </ul>
           </nav>
   </div>
 </header>
 
-
-
- <div class="tabs">
+<section class="banner">
+  <div class="container">  
+      <div class="banner__content">
+          <div class="banner__wrapper-logo">
+            <img src="/images/banner-logo.svg" alt="logo" class="banner__logo" loading="lazy">
+          </div>
+          <h1 class="banner__title">Modern axure template for beautiful prototypes</h1>
+          <p class="banner__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="banner__button">Download</button>
+          <!-- <div class="form">
+              <h3 class="form__title">Try your <span class="form__title-span">free</span>trial today</h3>
+              <div class="structure__form">
+              <input type="text" name="name" required placeholder="Name">
+              <input type="email" name="email" required placeholder="Email">
+              <input type="password" name="password" required placeholder="Password">
+              </div>
+              <button class="form__send">Get Started</button>
+            </div> -->
+      </div>
+  </div>
+</section>          
+        
+ <div id="tabs">
     <div class="container">
       <div class="tab__items">
           <a href="#" class="tab__item tab__item-active">Tab 1</a>
@@ -62,7 +82,7 @@
       </div>
     </div>
       
-   <section class="info">
+   <section id="info">
     <div class="container">
                 <h2 class="info__main-title">Why this is awesome</h2>
                 <div class="line"></div>
@@ -103,7 +123,7 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
       </div>
   </section>
 
-  <section class="price">
+  <section id="price">
       <div class="container">
             <div class="price__wrapper">
               <h3 class="price__title">Pricing options</h3>
@@ -146,8 +166,8 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
           </div>
          </div>
   </section>
-  
-  <section class="feedback">
+
+  <section id="feedback">
         <div class="container">
               <div class="feedback__wrapper-text">
                   <h3 class="feedback__title">What our customers are saying</h3>
