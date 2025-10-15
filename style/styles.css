@@ -75,7 +75,7 @@ body {
 .banner {
   background-image: url(../images/bannerbg.webp);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   min-height: 1026px;
   position: relative;
@@ -505,7 +505,6 @@ align-items: flex-start;
 
 
 /* FOOTER */
-
 .footer {
   background-color: #000;
   /* height: 164px; */
