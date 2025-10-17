@@ -8,7 +8,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/* Header сайта */
+/* Header сайта домашнее задане номер 7*/
 .header__site {
     position: relative;
     background-color: #000;
@@ -21,8 +21,6 @@ body {
 }
 
 .container__nav {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
@@ -46,7 +44,7 @@ body {
 
 }
 
-/* Следующий раздел */
+/* Следующий раздел  домашнее задание номер 7-8*/
 .modern__template {
     position: relative;
     background: url("/img/Background.jpg");
@@ -58,10 +56,8 @@ body {
 
 }
 
-
 .container__modern-template {
-    width: 100px;
-    min-width: 670px;
+    max-width: 670px;
     position: relative;
 }
 
@@ -95,9 +91,8 @@ body {
 .modern-template-title::after {
     content: "";
     display: inline-block;
-    height: 2px;
+   border: 1px solid #fff;
     width: 170px;
-    background-color: #fff;
     position: absolute;
     top: 440px;
     left: 0;
@@ -136,8 +131,137 @@ body {
     background-color: #ab4949;
     border-color: #ab4949;
 }
+/* Домашнее задание номер 8 */
+.wrapper__modern-template {
+
+    display: flex;
+    gap: 28px;
+    align-items: center;
+
+}
+
+.form__modern__template {
+    text-align: center;
+}
+.form__modern__template:last-of-type{
+    margin-bottom: 75px;
+
+}
+
+.text__for-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 75px;
+}
+
+.text__for-container span {
+    color: #EC7979;
+}
+
+.container__form {
+    padding-top: 36px;
+    z-index: 2;
+    width: 470px;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* .contact__form-wrapper:last-of-type{
+    margin-bottom: 75px;
+} */
+
+.data__person input {
+    width: 370px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #bdbdbd;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    outline: none;
+}
+
+
+.btn__modern__template {
+    width: 100%;
+    padding: 22px;
+    border: none;
+    background-color: #EC7979;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.btn__modern__template:hover {
+    background-color: #ab4949;
+}
+
+.btn__modern__template:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+/* -------------------------------------------------------- */
+/* Конец */
+/* social Media домашнее задание номер 7 */
+.container__social {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 30px;
+}
+.social__media {
+    padding: 32px 0 18px;
+    background-color: #f8efef;
+
+}
+.social__media-content {
+    max-width: 470px;
+}
+
+.social__media-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+
+}
+
+.social__media-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #86878B;
+}
+
+.social__media-icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.social__media-link {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+}
 
 /* Конец */
+
 .tabs {
     margin-bottom: 118px;
 }
@@ -204,6 +328,16 @@ p.tab__text:last-of-type {
     border: none;
     color: #fff;
 }
+
+.tab__btn:hover {
+    background-color: #ab4949;
+}
+
+.tab__btn:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 
 .tab:last-child {
     display: flex;
@@ -325,7 +459,7 @@ p.tab__text:last-of-type {
 }
 
 .pricing__coast {
-    /* width: 370px; */
+   
     padding: 28px;
     border-bottom: 2px solid #f5f5f5;
     font-weight: 700;
@@ -344,7 +478,6 @@ p.tab__text:last-of-type {
 
 .pricing__list li {
     list-style: none;
-    /* width: 370px; */
     padding: 14px;
     font-weight: 400;
     font-size: 18px;
@@ -455,7 +588,7 @@ article .feedback {
     line-height: 21px;
 }
 
-/* Раздел Дизайна */
+/* Раздел Дизайна домашнее задание номер 7 */
 .style__design-title {
     color: #fff;
     font-size: 36px;
@@ -474,7 +607,7 @@ article .feedback {
     width: 170px;
     background-color: #fff;
     position: absolute;
-    top: calc(100% + 45px);
+    top: calc(100% + 40px);
     left: calc(50% - 85px);
 }
 
@@ -520,7 +653,7 @@ article .feedback {
     background-image: url('/img/fon-design.png');
     padding: 70px 0;
     text-align: center;
-
+    margin-bottom: 67px;
 }
 
 .style__design::before {
@@ -542,17 +675,98 @@ article .feedback {
 }
 
 /* Конец */
+/* contact us  домашнее задание ноиер 8 */
+.section__contact-us {
+    margin-bottom: 50px;
+}
 
-/* footer сайта */
+.section__contact-title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.section__contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    width: 170px;
+    border: 1px solid #ec7979;
+    transform: translateX(-50%);
+
+}
+
+.section__contact-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 89px;
+    text-align: center;
+    color: #86878B;
+}
+
+.form {
+    text-align: center;
+
+}
+
+.wrapper__data-person {
+    display: flex;
+    gap: 30px;
+}
+
+.form__group-item input {
+    width: 571px;
+    margin-bottom: 50px;
+    padding-bottom: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #bdbdbd;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    outline: none;
+}
+
+.message__person input {
+    padding-bottom: 188px;
+
+}
+
+.button__send-message {
+    width: 370px;
+    padding: 18px;
+    background-color: #ec7979;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.button__send-message:hover {
+    background-color: #ab4949;
+}
+
+.button__send-message:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+/* -------------------------------------------------------- */
+/* конец */
+
+/* footer сайта домашнее задагие номер 7*/
 .footer__site {
     width: 100%;
     padding: 35px 75px;
     background-color: #000;
-
 }
 
 .footer__container {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -574,6 +788,4 @@ article .feedback {
     font-weight: 400;
     font-size: 18px;
 }
-
-
 /* Конец */
