@@ -7,12 +7,10 @@
 :root {
     --color-primary: #000000;
     --color-secondary: #86878B;
-    --color-bg-dark: #333333;
-    --color-bg-white: #F5F5F5;
-    --color-hover: #EC7979;
+    --color-pricing-dark: #333333;
+    --color-hover-border: #EC7979;
     --color-active: #AB4949;
-    --color-normal: #FFFFFF;
-    --color-border: #C6CBCD;
+    --color-text-white: #FFFFFF;
 }
 
 body {
@@ -52,6 +50,86 @@ body {
     color: #FFFFFF;
     line-height: 19px;
     text-decoration: none;
+}
+
+/* секция banner */
+
+.banner {
+    padding: 306px 0 185px 0;
+    background: url(../img/banner_bg.jpg) center center / cover no-repeat;
+    position: relative;
+
+    div {
+        position: relative;
+    }
+
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+}
+
+.banner__logo {
+
+    svg {
+        margin-bottom: 73px;
+    }
+}
+
+.banner__content {
+    width: 100%;
+    max-width: 670px;
+}
+
+.banner__title {
+    margin-bottom: 97px;
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 56px;
+    position: relative;
+}
+
+.banner__title::after {
+    content: '';
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 170px;
+    position: absolute;
+    top: calc(100% + 55px);
+    left: 0;
+}
+
+.banner__text {
+    width: 100%;
+    max-width: 270px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    line-height: 21px;
+}
+
+.banner__btn {
+    width: 100%;
+    max-width: 270px;
+    margin-top: 42px;
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
 }
 
 /* секуия tabs */
