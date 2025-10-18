@@ -8,8 +8,6 @@
     --color-primary: #000000;
     --color-secondary: #86878B;
     --color-pricing-dark: #333333;
-    --color-btn-hover: #EC7979;
-    --color-btn-active: #AB4949;
 }
 
 body {
@@ -54,7 +52,8 @@ body {
 /* секция banner */
 
 .banner {
-    background: url(../img/banner_bg.jpg) center center / cover no-repeat;
+    background: url(../img/banner_bg.jpg) center / cover no-repeat;
+    opacity: 0.9;
     position: relative;
 
     div {
@@ -143,7 +142,7 @@ body {
 .banner__btn:active {
     background: #ab4949;
     border-color: transparent;
-
+    color: #fff;
 }
 
 .signup {
@@ -307,6 +306,15 @@ body {
     line-height: 22px;
     color: #FFFFFF;
     font-weight: 600;
+}
+
+.btn-wrapper__download:hover {
+    background-color: #ab4949;
+}
+
+
+.btn-wrapper__download:active {
+    background-color: #EC7979;
 }
 
 .tabs__wrapper-image {
