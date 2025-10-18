@@ -14,6 +14,204 @@
         padding: 0 15px;
       }
 
+      .header {
+        background-color: #000000;
+      }
+
+      .header .container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+          padding: 20px;
+      }
+
+        .nav__items {
+          list-style: none;
+          display: flex;
+      }
+
+      .nav__link {
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 19px;
+          color: #FFFFFF;
+          text-transform: capitalize;
+          text-decoration: none;
+          padding: 28px;
+      }
+
+      .nav__link:hover {
+        background-color: #EC7979;
+      }
+
+      .nav__link:active {
+        background-color: #AB4949;
+      }
+
+        .nav__item {
+          min-width: 114px;
+          width: 100%;
+          text-align: center;
+      }
+
+      .banner {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../media/banner.png') center/cover no-repeat;
+        padding: 306px 0 185px;
+      }
+
+      .banner__wrapper {
+        display: flex;
+        column-gap: 101px;
+      }
+
+      .banner__logo {
+        margin-bottom: 73px;
+      }
+
+      .banner__h1 {
+        margin-bottom: 97px;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56px;
+        color: #FFFFFF;
+        max-width: 670px;
+        width: 100%;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      .banner__h1:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -55px;
+        width: 170px;
+        height: 1px;
+        background-color: #FFFFFF;
+      }
+
+      .banner__text {
+        max-width: 270px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+
+      .banner__btn {
+        margin-top: 42px;
+        width: 270px;
+        max-width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        padding: 15.8px;
+      }
+
+      .banner__form {
+        width: 100%;
+        max-width: 470px;
+        background: #fff;
+        border-radius: 10px;
+        text-align: center;
+        padding: 36px 50px;
+        position: relative;
+      }
+
+      .banner__form-title {
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 75px;
+      }
+
+      .banner__form-title span {
+        color: #EC7979;
+      }
+
+      .banner__form-input {
+        display: block;
+        width: 100%;
+        max-width: 370px;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: "Open Sans", sans-serif;
+        padding: 10.1px;
+        color: #BDBDBD;
+        margin-bottom: 31px;
+      }
+
+      .banner__form-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #f38181;
+        color: #fff;
+        border: none;
+        padding: 20.8px 0;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .social {
+        background-color: #F8EFEF;
+        margin-bottom: 100px;
+        padding: 32px 0 18px;
+      }
+       
+      .social .container {
+          display: flex;
+          column-gap: 30px;
+      }
+
+      .social__title {
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33px;
+        color: #333333;
+        margin-bottom: 16px;
+      }
+
+      .social__text {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #86878B;
+      }
+
+      .social__list {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .social__item {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .heading {
         text-align: center;
         margin-bottom: 92px;
