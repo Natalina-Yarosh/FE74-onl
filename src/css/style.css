@@ -709,6 +709,18 @@ body {
     text-transform: capitalize;
     background: transparent;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.design__btn:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+}
+
+.design__btn:active {
+    background: #ab4949;
+    border-color: transparent;
+    color: #fff;
 }
 
 /* contact */
@@ -787,6 +799,15 @@ body {
     background-color: #EC7979;
     border: none;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: #AB4949;
+}
+
+.form__btn:active {
+    background-color: #ec7979;
 }
 
 .footer {
