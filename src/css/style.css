@@ -8,6 +8,13 @@
     --color-primary: #000000;
     --color-secondary: #86878B;
     --color-pricing-dark: #333333;
+    --color-white: #FFFFFF;
+    --color-accent: #EC7979;
+    --color-accent-dark: #AB4949;
+    --color-border: #C6CBCD;
+    --color-light-bg: #F5F5F5;
+    --color-light-gray: #F8EFEF;
+    --color-placeholder: #BDBDBD;
 }
 
 body {
