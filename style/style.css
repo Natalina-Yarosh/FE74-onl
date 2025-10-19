@@ -3,3 +3,184 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+/*Header HW7*/
+.axit-header{
+    position: relative;
+    background-color: #000;
+}
+.axit-header__logo-img{
+width: 86.8px;
+height: 31px;
+}
+.container-nav{
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  margin-right: 122px;
+  margin-left: 152px;
+}
+.axit-header__nav-lists{
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+}
+.axit-header__nav-link{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.axit-main{
+  background-image: url("../images/axit-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+.axit-main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.axit-main__wrapper{
+  padding: 306px 99px 185px 170px;
+  display: flex;
+  justify-content:space-between;
+  position:relative;
+  gap: 30px;
+}
+.axit-main__wrapper-text{
+  max-width: 670px;
+}
+.axit-main__wrapper-form{
+  width: 470px;
+  height: 450px;
+  align-items: center;
+  border-radius: 3%;
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 36px;
+}
+.axit-main__form-text{
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.axit-main__form-text span{
+  color: #EC7979;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+.axit-main__form-btn{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  height: 60px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #EC7979;  
+  margin-top: 75px;
+}
+.axit-main__title{
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 55px;
+}
+.axit-main__wrapper-logo{
+  margin-bottom: 73px;
+}
+.axit-main__line{
+  width: 170px;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 42px;
+  height: 1px;
+}
+.axit-main__text{
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  width: 270px;
+}
+.axit-main__download-btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  line-height: 58px;
+  width: 270px;
+  margin-top: 42px;
+}
+.axit-main__wrapper-logo{
+  width: 170px;
+  height: 55px;
+}
+.axit-main__text-logo{
+  width: 100%;
+  height: 100%  ;
+}
+.axit-main__form-group{
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+
+}
+.axit-main__download-btn:hover {
+    color: #232323;
+    border-color: #232323;
+}
+.axit-footer__links{
+  max-width: 670px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+.axit-footer{
+  background-color: #F8EFEF;
+  max-height: 140px;
+  height: 100%;
+  padding-top: 32px;
+}
+.axit-footer__container{
+  padding: 0 170px;
+  display: flex;
+  justify-content: space-between;
+}
+.axit-footer__info-wrapper{
+  max-width: 470px;
+  width: 100%;
+}
+.axit-footer__title{
+  color: #333333;
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.axit-footer__info{
+  color: #86878B;
+  font-size: 18px;
+  font-weight: 400;
+}
