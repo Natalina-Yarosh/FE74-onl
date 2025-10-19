@@ -32,6 +32,7 @@
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
+
 body{
     font-family: var(--font-family-primary);
     color: var(--color-text-primary);
@@ -42,6 +43,31 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 
+}
+
+.btn{
+    background-color: transparent;
+    color: var(--color-background-primary);
+    font-family: var(--font-family-secondar);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    line-height: 25px;
+    border: 2px solid var(--color-background-primary);
+    cursor: pointer;
+    max-width: 270px;
+    padding: 14.5px;
+    width: 100%;
+}
+
+.btn:hover{
+    border-color: var(--color-border-secondar);
+    color: var(--color-border-secondar);
+}
+
+.btn:active{
+    background: var(--color-background-active);
+    border-color: var(--color-background-active);
+    color: var(--color-background-primary);
 }
 
 .header{
@@ -156,6 +182,12 @@ body{
     transform: translateY(55px);
 }
 
+.description{
+    color: var(--color-text-secondar);
+    font-size: var(--font-size-base);
+    line-height: 21px;
+}
+
 .banner__description {
     max-width: 270px;
     margin-bottom: 42px;
@@ -178,7 +210,7 @@ body{
     font-family: var(--font-family-secondar);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-lg);
-    line-height: 24px;
+    line-height: 33px;
     text-transform: uppercase;
     margin-bottom: 75px;
 }
@@ -190,43 +222,63 @@ body{
 .model__input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    padding-bottom: 20px;
+    padding: 10px 2px;
     width: 100%;
+    font-family: var(--font-family-secondar);
+    font-size: var(--font-size-xs);
+    line-height: 19px;
 }
 
 .model__input:not(:last-child) {
     margin-bottom: 31px;
 }
 
-::placeholder {
+.model__input::placeholder {
     color: #BDBDBD;
 
 }
 
-.model__btn{
+.model__input:hover {
+    border-bottom-color: var(--color-border-secondar);
+}
+
+.model__input:hover::placeholder {
+    color: var(--color-border-secondar);
+}
+
+.model__input:focus {
+    outline: none;
+    border-bottom-color: var(--color-border-secondar);
+}
+
+.model__input:focus::placeholder {
+    color: transparent;
+}
+
+.model__input:active {
+    border-bottom-color: var(--color-background-active);
+}
+
+.button{
     width: 100%;
-    padding: 22.5px;
+    padding: 20px;
     border: none;
     background-color: var(--color-border-secondar);
     font-family: var(--font-family-secondar);
     font-weight: var(--font-weight-semibold);
     font-size: 15px;
-    line-height: 15px;
+    line-height: 20px;
     color: var(--color-background-primary);
     border-radius: 0 0 10px 10px;
 }
 
-.model__btn:hover{
+.button:hover{
     background: var(--color-background-active)
 }
 
-.model__btn:active{
+.button:active{
     background: var(--color-border-secondar);
     box-shadow: inset 0px 0px 10px #AB4949;
-}
-
-.design__btn{
-    max-width: 270px;
 }
 
 .social-media{
@@ -250,26 +302,29 @@ body{
     font-size: var(--font-size-lg);
     font-family: var(--font-family-secondar);
     font-weight: var(--font-weight-bold);
-    line-height: 32px;
+    line-height: 33px;
     margin-bottom: 16px;
 }
 
 .link{
     display: flex;
     align-items: center;
-}
-
-.icons{
-    display: flex;
-    column-gap: 56.18px;
-}
-
-.tabs{
-    margin-bottom: 118px;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
 }
 
 .link svg:hover path {
     fill: var(--color-border-secondar);
+}
+
+.icons{
+    display: flex;
+    column-gap: 30px;
+}
+
+.tabs{
+    margin-bottom: 118px;
 }
 
 .tabs__buttons{
@@ -286,7 +341,7 @@ body{
     max-width: 203px;
     width: 100%;
     font-size: var(--font-size-xs);
-    line-height: 18px;
+    line-height: 19px;
 
 }
 
@@ -325,12 +380,11 @@ body{
     font-family: var(--font-family-secondar);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xl);
-    line-height: 40px;
+    line-height: 41px;
     margin-bottom: 57px;
 }
 
 .tab__description{
-    font-weight: var(--font-weight-regular);
     font-size: var(--font-size-base);
     line-height: 21px;
     margin-bottom: 26px;
@@ -414,13 +468,6 @@ body{
     left: 50%;
     top: 100%;
     transform: translate(-71px, 40px);
-}
-
-.description{
-    color: var(--color-text-secondar);
-    font-size: var(--font-size-base);
-    line-height: 21px;
-
 }
 
 .about__features{
@@ -629,31 +676,9 @@ th.table__cell--header{
     border-top: 1px solid var(--color-background-primary);
 }
 
-.btn{
-    background-color: transparent;
-    color: var(--color-background-primary);
-    font-family: var(--font-family-secondar);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-base);
-    line-height: 18px;
-    border: 2px solid var(--color-background-primary);
-    cursor: pointer;
+.design__btn{
     max-width: 370px;
-    padding: 18px;
-    width: 100%;
 }
-
-.btn:hover{
-    border-color: var(--color-border-secondar);
-    color: var(--color-border-secondar);
-}
-
-.btn:active{
-    background: var(--color-background-active);
-    border-color: var(--color-background-active);
-    color: var(--color-background-primary);
-}
-
 
 .contact{
     margin-bottom: 66px;
@@ -678,21 +703,16 @@ th.table__cell--header{
     width: 100%;
 }
 
-.model__input{
-    font-family: var(--font-family-secondar);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-xs);
-    line-height: 14px;
-}
-
 .message{
     resize: none;
 }
 
-.button{
+.contact__button{
     max-width: 370px;
-    padding: 20px;
+    padding: 16.5px;
     border-radius: 0;
+    font-size: var(--font-size-base);
+    line-height: 25px;
 }
 
 .footer {
@@ -700,14 +720,19 @@ th.table__cell--header{
     padding: 35px 0 27px 0;
 }
 
+.footer__link{
+    width: 53px;
+    height: 53px;
+}
+
 .footer__icons{
     justify-content: center;
     margin-bottom: 27.8px;
-    column-gap: 52.7px;
+    column-gap: 32px;
 }
 
 .footer__copyright{
-    font-size: 18px;
+    font-size: var(--font-size-base);
     line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
