@@ -467,7 +467,7 @@ body{
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translate(-71px, 40px);
+    transform: translate(-50%, 40px);
 }
 
 .about__features{
@@ -648,6 +648,7 @@ th.table__cell--header{
     padding: 70px 0;
     position: relative;
     margin-bottom: 67px;
+    text-align: center;
 }
 
 .design::before{
@@ -661,6 +662,9 @@ th.table__cell--header{
     top: 0;
 }
 
+.design__header{
+    margin-bottom: 79.86px;
+}
 
 .design__title{
     color: var(--color-background-primary);
@@ -669,7 +673,6 @@ th.table__cell--header{
 
 .design__description{
     color: var(--color-background-primary);
-    margin-bottom: 79.86px;
 }
 
 .design__title::after{
