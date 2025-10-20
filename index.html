@@ -12,9 +12,8 @@
 <body>
 
 <header class="header">
-  <div class="container">
-     <div class="logo-wrapper"> 
-        <a href="#">
+  <div class="container"> 
+        <a href="#" class="header__logo">
           <svg class="logo" width="87" height="31" viewBox="0 0 87 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.3163 0H15.8289L26.1059 31H20.5146L17.9158 23.2718H8.1507L5.5913 31H0L10.3163 0ZM16.9314 19.0366L13.0726 6.24366L9.05633 19.0366H16.9314Z" fill="white"/>
 <path d="M32.086 0L39.016 11.4394L45.9067 0H51.813L42.1267 15.7183L51.498 31H45.5917L39.016 19.9972L32.401 31H26.4553L35.8266 15.7183L26.1403 0H32.086Z" fill="white"/>
@@ -22,7 +21,6 @@
 <path d="M86.8026 5.2831H77.8644V31H72.4699V5.2831H63.5317V0H86.8026V5.2831Z" fill="#EC7979"/>
           </svg>
         </a>
-      </div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -58,19 +56,19 @@
   </div>
   <div class="banner__wrapper-form">               
                     <form class="banner__form" id="formBanner">
-                      <h3 class="form__title">Try your <span class="form__title-span">free</span> trial today</h3>
-                      <input class="underline-input" type="text" name="name" required placeholder="Name">
-                      <input class="underline-input" type="email" name="email" required placeholder="Email">
-                      <input class="underline-input" type="password" name="password" required placeholder="Password">
+                      <h3 class="banner__form-title">Try your <span class="form__title-span">free</span> trial today</h3>
+                      <input class="input-underline" type="text" name="name" required placeholder="Name">
+                      <input class="input-underline" type="email" name="email" required placeholder="Email">
+                      <input class="input-underline" type="password" name="password" required placeholder="Password">
                     </form>
                   <button class="banner__form-btn" form="formBanner">Get Started</button>
       </div>
 </section>          
 
-<section id="social_media">
+<section class="social_media">
 </section>
 
- <div id="tabs">
+ <div class="tabs" id="tabs">
     <div class="container">
       <div class="tab__items">
           <a href="#" class="tab__item tab__item-active">Tab 1</a>
@@ -92,7 +90,7 @@
       </div>
     </div>
       
-  <section id="info">
+  <section class="info" id="info">
     <div class="container">
                 <h2 class="info__main-title">Why this is awesome</h2>
                 <div class="line"></div>
@@ -133,7 +131,7 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
       </div>
   </section>
 
-  <section id="price">
+  <section class="price" id="price">
       <div class="container">
             <div class="price__wrapper">
               <h3 class="price__title">Pricing options</h3>
@@ -177,7 +175,7 @@ elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accum
          </div>
   </section>
 
-  <section id="feedback">
+  <section class="feedback" id="feedback">
         <div class="container">
               <div class="feedback__wrapper-text">
                   <h3 class="feedback__title">What our customers are saying</h3>
@@ -245,15 +243,15 @@ quo suscipit.</p>
   </div>
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
   <div class="container">
       <h2 class="contact__title">Contact us</h2>
       <p class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <form class="contact__form" id="formContact">
                   <div class="contact__form-inputs">    
-                      <input class="underline-input contact__form-input" type="text" name="name" required placeholder="Name">
-                      <input class="underline-input contact__form-input" type="email" name="email" required placeholder="Email">
-                      <input class="underline-input contact__form-input" type="password" name="password" required placeholder="Password">
+                      <input class="input-underline contact__form-input" type="text" name="name" required placeholder="Name">
+                      <input class="input-underline contact__form-input" type="email" name="email" required placeholder="Email">
+                      <input class="input-underline contact__form-input" type="password" name="password" required placeholder="Password">
                   </div>
                       <textarea class="textarea contact__form-message" name="message" id="name" placeholder="Message"></textarea>
                 </form>                
