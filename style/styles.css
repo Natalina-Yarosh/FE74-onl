@@ -268,6 +268,7 @@ box-shadow: inset 0 0 10px 0 #ab4949;;
 .tabs {
   margin-top: 100px;
   margin-bottom: 118px;
+  scroll-margin: 80px;
  }
 
 .tab__item {
@@ -366,6 +367,7 @@ max-width: 470px;;
 .info {
   margin-bottom: 110px;
   text-align: center;
+  scroll-margin: 80px;
  }
 
 .info__main-title {
@@ -441,6 +443,7 @@ max-width: 470px;;
   padding-bottom: 83px;
   background-color: #F5F5F5;
   text-align: center;
+  scroll-margin: 80px;
 }
 
 .price__wrapper {
@@ -549,6 +552,7 @@ align-items: flex-start;
 /* WHAT OUR CUSTOMERS ARE SAYING */
 .feedback {
   padding: 107px 0;
+  scroll-margin: 80px;
 }
 
 .feedback__wrapper-text {
@@ -746,6 +750,7 @@ position: relative;
 .contact {
   padding: 67px 0;
   text-align: center;
+  scroll-margin: 80px;
 }
 
 .contact__title {
