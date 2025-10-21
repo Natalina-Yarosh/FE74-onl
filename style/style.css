@@ -179,6 +179,7 @@ main {
   padding: 306px 0 185px;
   position: relative;
   color: var(--basic-color-2);
+  scroll-margin: 75px;
 }
 
 .banner::before {
@@ -196,11 +197,6 @@ main {
   display: flex;
   gap: 30px;
   align-items: center;
-}
-
-.banner__info {
-  margin-top:-381px;
-  padding-top: 381px;
 }
 
 .banner__logo {
@@ -360,8 +356,8 @@ main {
 }
 
 .about {
-  margin: -175px 0 100px;
-  padding-top: 175px;
+  margin-bottom: 100px;  
+  scroll-margin: 175px;
 }
 
 .about__heading {
@@ -404,8 +400,8 @@ main {
 }
 
 .features {
-  margin: -175px 0 100px;
-  padding-top: 175px;
+  margin-bottom: 100px;  
+  scroll-margin: 175px;
 }
 
 .features__tabs {
@@ -489,12 +485,12 @@ main {
 .pricing {
   background-color: var(--bg-color-1);
   margin-bottom: 100px;
-  padding: 82px 0;
+  padding: 82px 0;   
+  scroll-margin: 75px;
 }
 
 .pricing__heading {  
-  margin: -154px 0 79px;
-  padding-top: 154px;
+  margin-bottom: 79px;  
 }
 
 .pricing__wrapper {
@@ -558,8 +554,8 @@ main {
 }
 
 .reviews {
-  margin: -175px 0 100px;
-  padding-top: 175px;
+  margin-bottom: 100px;
+  scroll-margin: 175px;
 }
 
 .reviews__heading {
@@ -674,7 +670,8 @@ main {
 
 .contact {
   margin: 66px 0;
-  text-align: center;
+  text-align: center;  
+  scroll-margin: 141px;
 }
 
 .contact__heading {
