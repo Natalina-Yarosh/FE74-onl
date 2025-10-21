@@ -14,13 +14,11 @@ body {
 .info {
   text-align: center;
   margin-bottom: 110px;
-  padding-top: 118px;
 }
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  position: relative;
 }
 .info__header, .tarifs__header, .customers__header, .contact__header {
   font: 400 36px / 42px 'Raleway', sans-serif;
@@ -36,8 +34,9 @@ body {
   height: 1px;
   width: 170px;
   background-color: #EC7979;
-  top: calc(100% + 40px);
-  left: calc(50% - 85px);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 40px);
 }
 .dash {
   border-bottom: 1px solid #EC7979;
@@ -74,7 +73,7 @@ body {
   font: 400 18px / 21px 'Raleway', sans-serif;
 }
 .tabs {
-  padding-top: 100px;
+  margin-bottom: 118px;
 }
 .tabs__link {
   text-decoration: none;
@@ -133,6 +132,7 @@ body {
 }
 .tab__button:hover {
   background-color: #AB4949;
+  cursor: pointer;
 }
 .tab__button:active {
   background-color: #EC7979;
@@ -150,6 +150,7 @@ body {
   background-color: #F5F5F5;
   padding: 82px 0 83px;
   text-align: center;
+  margin-bottom: 107px;
 }
 .tarifs__subheader {
   margin-bottom: 79px;
@@ -199,7 +200,6 @@ body {
 .customers {
   text-align: center;
   margin-bottom: 107px;
-  padding-top: 107px;
 }
 .customers__reviews {
   display: flex;
@@ -259,17 +259,11 @@ body {
 }
 .header {
   background-color: #000000;
-  max-height: 75px;
 }
-.header__container {
+.header .container {
   display: flex;
-  padding: 0 122px 0 152px;
   justify-content: space-between;
   align-items: center;
-}
-.logo__wrapper {
-  height: 31px;
-  width: 87px;
 }
 .header__logo {
   object-fit: cover;
@@ -300,12 +294,13 @@ body {
 .navigation__link:active {
   background-color: #AB4949;
 }
-.main {
+.banner {
   padding-top: 306px;
+  padding-bottom: 185px;
   background: url(../images/main_bg.png) center / cover no-repeat;
   position: relative;
 }
-.main::before {
+.banner::before {
   content: '';
   display: block;
   width: 100%;
@@ -315,15 +310,13 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-.container-main {
+.banner .container {
   display: flex;
   gap: 101px;
   position: relative;
+  align-items: center;
 }
-.main__text {
-  margin-left: 170px;
-}
-.main__logo-wrapper {
+.banner__wrapper-logo {
   width: 170px;
   height: 55px;
   margin-bottom: 73px;
@@ -333,93 +326,103 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.main__header {
+.banner__title {
   max-width: 670px;
   font: 500 48px / 56px 'Raleway', sans-serif;
   color: #FFFFFF;
   margin-bottom: 97px;
   position: relative;
 }
-.main__header::after {
+.banner__title::after {
   content: '';
   position: absolute;
   display: inline-block;
   height: 1px;
   width: 170px;
   background-color: #FFF;
-  top: calc(100% + 55px);
+  top: 100%;
   left: 0;
+  transform: translateY(55px);
 }
 .dash-white {
   border-bottom: 1px solid #FFFFFF;
   width: 170px;
   margin-bottom: 42px;
 }
-.main__paragraph {
+.banner__text {
   font: 400 18px / 21px 'Raleway', sans-serif;
   color: #FFFFFF;
   margin-bottom: 42px;
   max-width: 270px;
 }
-.download {
+.banner__btn {
  font: 600 18px / 25px 'Open Sans', sans-serif;
  color: #FFFFFF;
  border: 2px solid #FFFFFF;
  background-color: transparent;
- padding: 14.5px 89px;
- margin-bottom: 185px;
+ padding: 14.5px;
+ width: 100%;
+ max-width: 270px;
 }
-.download:hover {
+.banner__btn:hover {
   color: #EC7979;
   border-color: #EC7979;
+  cursor: pointer;
 }
-.download:active {
+.banner__btn:active {
   color: #FFF;
   background-color: #AB4949;
   border-color: #AB4949;
 }
-.sm__block {
+.social-media {
   background-color: #F8EFEF;
+  margin-bottom: 100px;
+  padding: 32px 0 18px;
 }
-.sm__container {
+.social-media__container {
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: space-between;
 }
-.sm__header {
-  padding-top: 32px;
+.social-media__info {
+  max-width: 470px;
+}
+.social-media__title {
   color: #333333;
   font: 700 24px / 33px 'Open Sans', sans-serif;
   margin-bottom: 16px;
 }
-.sm__paragraph {
-  max-width: 470px;
+.social-media__text {
   font: 400 18px / 21px 'Raleway', sans-serif;
   color: #86878B;
-  margin-bottom: 18px;
 }
-.sm__list {
+.social-media__list {
   display: flex;
   list-style-type: none;
-  max-width: 670px;
   gap: 30px;
 }
-.sm__link {
-  display: block;
+.social-media__link {
+  display: flex;
   height: 70px;
   width: 70px;
+  align-items: center;
+  justify-content: center;
 }
 .sm__icon {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
 .promo {
   background: url(../images/promo_bg.jpg) center / cover no-repeat;
   position: relative;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 70px;
+  padding: 70px 0;
+  margin-bottom: 67px;
+}
+.promo .container {
+  position: relative;
 }
 .promo::before {
   content: '';
@@ -443,29 +446,26 @@ body {
   height: 1px;
   width: 170px;
   background-color: #FFF;
-  top: calc(100% + 40px);
-  left: calc(50% - 85px);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 40px);
 }
 .promo__paragraph {
   font: 400 18px / 21px 'Raleway', sans-serif;
   margin-bottom: 80px;
 }
 .promo__download {
-  padding: 14.5px 139px;
-  margin-bottom: 70px;
+  padding: 14.5px;
+  max-width: 370px;
 }
 .contact {
-  padding-top: 67px;
+  margin-bottom: 67px;
 }
 .contact__paragraph {
   text-align: center;
   font: 400 18px / 21px 'Raleway', sans-serif;
   color: #86878B;
   margin-bottom: 89px;
-}
-.contact__form {
-
-  margin-bottom: 66px;
 }
 .footer {
   background-color: #000000;
@@ -479,9 +479,11 @@ body {
   margin-bottom: 27.8px;
 }
 .footer__link {
-  display: block;
+  display: flex;
   height: 53.2px;
   width: 53.2px;
+  justify-content: center;
+  align-items: center;
 }
 .footer__icon {
   height: 100%;
@@ -493,17 +495,17 @@ body {
   color:rgb(255, 255, 255, .5);
   text-align: center;
 }
-.main__form {
-  height: 450px;
-  width: 470px;
+.banner__form {
+  max-width: 470px;
+  width: 100%;
   background-color: #FFF;
-  margin-top: 27px;
   border-radius: 10px;
+  overflow: hidden;
 }
-.form-wrapper {
-  margin: 36px 50px 75px;
+.banner__form-content {
+  padding: 36px 50px 75px;
 }
-.form__header {
+.banner__form-title {
   font: 700 24px / 33px 'Open Sans', sans-serif;
   text-align: center;
   color: #333333;
@@ -513,20 +515,34 @@ body {
 .emphasis {
   color: #EC7979;
 }
-.form-group {
-  margin-bottom: 30px;
+.form__group {
+  margin-bottom: 16px;
+  position: relative;
 }
-.form-group:last-child {
+.form__group:last-child {
  margin-bottom: 0;
+}
+input:focus + label, input:not(:placeholder-shown) + label {
+  transform: translateY(-50%);
+  top: 0;
 }
 .form__label {
   display: block;
   font: 400 14px / 19px 'Open Sans', sans-serif;
   color: #BDBDBD;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.textarea_label {
+  top: 24px;
 }
 .form__input {
   border-bottom: 1px solid #BDBDBD;
   width: 100%;
+  padding: 16px 0;
+  font: 400 14px / 19px 'Open Sans', sans-serif;
 }
 .form__submit {
   width: 100%;
@@ -534,38 +550,46 @@ body {
   color: #FFFFFF;
   background-color: #EC7979;
   padding: 20px 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 .form__submit:hover {
   background-color: #AB4949;
+  cursor: pointer;
 }
 .form__submit:active {
   background-color: #EC7979;
   box-shadow: inset 0 0 10px #AB4949;
 }
-.contact__form-wrapper {
+.contact__content {
   display: flex;
   gap: 30px;
   margin-bottom: 50px;
 }
-.form__left, .form__right {
+.contact__wrapper-inputs, .contact__wrapper-textarea {
   width: 100%;
 }
 .contact__form-group {
-  margin-bottom: 47px;
+  margin-bottom: 34px;
+  position: relative;
 }
 .contact__form-group:last-child {
-  margin-bottom: 3px;
+  margin-bottom: 0;
 }
 .textarea__form-group {
+  position: relative;
   margin-bottom: 0;
 }
 .form__textarea {
   border-bottom: 1px solid #BDBDBD;
   width: 100%;
   resize: none;
-  height: 187px;
+  min-height: 223px;
+  font: 400 14px / 19px 'Open Sans', sans-serif;
+  color: #000000;
+  padding: 16px 0;
+}
+textarea:focus + label, textarea:not(:placeholder-shown) + label {
+  transform: translateY(-50%);
+  top: 0;
 }
 .button-wrapper {
   display: flex;
@@ -575,12 +599,29 @@ body {
   font: 600 18px / 25px 'Open Sans', sans-serif;
   color: #FFF;
   background-color: #EC7979;
-  padding: 16.5px 123.5px;
+  padding: 16.5px;
+  margin: 0 auto;
+  max-width: 370px;
+  width: 100%;
+  display: block;
 }
 .contact__submit:hover {
   background-color: #AB4949;
+  cursor: pointer;
 }
 .contact__submit:active {
   background-color: #EC7979;
   box-shadow: inset 0 0 10px #AB4949;
+}
+input:hover {
+  border-bottom: 1px solid #727272;
+}
+input:focus {
+  border-bottom: 1px solid #EC7979;
+}
+textarea:hover {
+  border-bottom: 1px solid #727272;
+}
+textarea:focus {
+  border-bottom: 1px solid #EC7979;
 }
