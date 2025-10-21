@@ -14,6 +14,7 @@ body {
 .info {
   text-align: center;
   margin-bottom: 110px;
+  scroll-margin-top: 150px;
 }
 .container {
   max-width: 1200px;
@@ -37,11 +38,6 @@ body {
   top: 100%;
   left: 50%;
   transform: translate(-50%, 40px);
-}
-.dash {
-  border-bottom: 1px solid #EC7979;
-  width: 170px;
-  margin: 0 auto 40px;
 }
 .info__subheader, .tarifs__subheader, .customers__subheader {
   font: 400 18px / 21px 'Raleway', sans-serif;
@@ -74,6 +70,7 @@ body {
 }
 .tabs {
   margin-bottom: 118px;
+  scroll-margin-top: 130px;
 }
 .tabs__link {
   text-decoration: none;
@@ -151,6 +148,7 @@ body {
   padding: 82px 0 83px;
   text-align: center;
   margin-bottom: 107px;
+  scroll-margin-top: 60px;
 }
 .tarifs__subheader {
   margin-bottom: 79px;
@@ -200,6 +198,7 @@ body {
 .customers {
   text-align: center;
   margin-bottom: 107px;
+  scroll-margin-top: 150px;
 }
 .customers__reviews {
   display: flex;
@@ -259,6 +258,9 @@ body {
 }
 .header {
   background-color: #000000;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .header .container {
   display: flex;
@@ -343,11 +345,6 @@ body {
   top: 100%;
   left: 0;
   transform: translateY(55px);
-}
-.dash-white {
-  border-bottom: 1px solid #FFFFFF;
-  width: 170px;
-  margin-bottom: 42px;
 }
 .banner__text {
   font: 400 18px / 21px 'Raleway', sans-serif;
@@ -460,6 +457,7 @@ body {
 }
 .contact {
   margin-bottom: 67px;
+  scroll-margin-top: 130px;
 }
 .contact__paragraph {
   text-align: center;
