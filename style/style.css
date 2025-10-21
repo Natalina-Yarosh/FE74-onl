@@ -188,7 +188,10 @@ height: 31px;
     background-color: #e94b4b;
 }
 .axit-header__nav-link:hover{
-  color: #c8c8c8;
+  color: #EC7979;
+}
+.axit-header__nav-link:active{
+  color: #AB4949;
 }
 .axit-main__input{
   border: none;
