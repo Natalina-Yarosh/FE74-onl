@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 body {
     font-family: "Raleway", sans-serif;
 }
@@ -11,24 +15,23 @@ body {
 .axit-header{
     position: relative;
     background-color: #000;
+    top: 0;
+    z-index: 1;
+    padding: 22px 0;
+}
+.axit-header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .axit-header__logo-img{
 width: 86.8px;
 height: 31px;
 }
-.container-nav{
-  padding: 15px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  margin-right: 122px;
-  margin-left: 152px;
-}
 .axit-header__nav-lists{
   display: flex;
-  justify-content: space-between;
-  width: 570px;
+  list-style: none;
+  column-gap: 65px;
 }
 .axit-header__nav-link{
   text-decoration: none;
@@ -44,15 +47,19 @@ height: 31px;
   background-position: center;
   background-size: cover;
   position: relative;
-  min-height: 100vh;
+  padding: 306px 0 185px;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken; 
 }
-.axit-main::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+
+section.axit-main .container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 30px;
+  align-items: center;
 }
 .axit-main__wrapper{
   padding: 306px 99px 185px 170px;
@@ -106,6 +113,7 @@ height: 31px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 55px;
+  line-height: 56px;
 }
 .axit-main__wrapper-logo{
   margin-bottom: 73px;
@@ -121,15 +129,20 @@ height: 31px;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  width: 270px;
+  max-width: 270px;
+  line-height: 21px;
 }
 .axit-main__download-btn{
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
-  line-height: 58px;
-  width: 270px;
+  line-height: 24px;
+  font-size: 18px;
+max-width : 270px;
+width: 100%;
   margin-top: 42px;
+  padding: 15px;
+  font-weight: 600;
 }
 .axit-main__wrapper-logo{
   width: 170px;
@@ -138,6 +151,7 @@ height: 31px;
 .axit-main__text-logo{
   width: 100%;
   height: 100%  ;
+  object-fit: contain;
 }
 .axit-main__form-group{
   display: flex;
@@ -145,8 +159,13 @@ height: 31px;
   align-items: center;
 }
 .axit-main__download-btn:hover {
-    color: #afafaf;
-    border-color: #afafaf;
+    color: #EC7979;
+    border-color: #EC7979;
+}
+.axit-main__download-btn:active {
+    color: #fff;
+    border-color: #AB4949;
+    background-color: #AB4949;
 }
 .axit-footer__links{
   max-width: 670px;
@@ -158,9 +177,8 @@ height: 31px;
 }
 .axit-footer{
   background-color: #F8EFEF;
-  max-height: 140px;
-  height: 100%;
   padding-top: 32px;
+  padding-bottom: 18px;
 }
 .axit-footer__container{
   padding: 0 170px;
@@ -185,7 +203,10 @@ height: 31px;
   font-weight: 400;
 }
 .axit-main__form-btn:hover {
-    background-color: #e94b4b;
+    background-color: #AB4949;
+}
+.axit-main__form-btn:active {
+    background-color: #EC7979;
 }
 .axit-header__nav-link:hover{
   color: #EC7979;
@@ -205,4 +226,150 @@ height: 31px;
 }
 .axit-main__form-group:not(:last-child){
   margin-bottom: 31px
+}
+.axit-footer__link:hover path{
+  fill: #EC7979;
+}
+.axit-footer__link:active path{
+  fill: #AB4949;
+}
+.axit-footer{
+  margin-bottom: 100px;
+}
+
+.info__main_title{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+
+.info__wrapper{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    border: none;
+    
+}
+.info__text{
+    margin-bottom: 92px;
+    text-align: center;
+    font-size: 18px;
+    color: #86878B;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+.info__text-container{
+    text-align: center;
+    flex: 1;
+    max-width: 370px;
+}
+.info__section_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 27px;
+
+}
+.info__image-wrapper{
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 24px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info__title{
+    margin-bottom: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+.info__paragraph{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.tabs {
+    margin-top: 100px;
+    margin-bottom: 83px;
+}
+.tabs__link{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #C6CBCD;
+    border-bottom: #fff;
+    border-radius: 5px 5px 0px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    width: 100%;
+    max-width: 203px;
+    padding: 10px;
+}
+.tab{
+    display: flex;
+    border: 1px solid #C6CBCD;
+}
+.tab__wrapper-text{
+    
+    max-width: 700px;
+    padding: 55px 29px 54px 100px;
+
+}
+.tab__title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 57px;
+}
+.tab__text-1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 26px;
+    line-height: 21px;
+}
+.tab__text-2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.tab__wrapper-image{
+    flex: 1;
+    max-width: 470px;
+    display: flex;
+}
+.tab__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.tab__button{
+    margin-top: 84px;
+    border: none;
+    background-color: #EC7979;
+    font-family: "Open Sans", semibold;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    max-width: 270px;
+    padding: 16.5px;
 }
