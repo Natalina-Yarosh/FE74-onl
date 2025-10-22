@@ -20,52 +20,46 @@
 
 <body>
     <!-- Header сайта -->
-    <header class="header__site">
+    <header class="header">
         <div class="container">
-            <div class="container__nav">
-                <a class="logo__site" href="index.html"> <img class="logo__site-img" src="./img/Logo-site.svg"
-                        alt="Логотип AXIT"></a>
-                <nav class="navigation__site">
-                    <ul class="nav__lists">
-                        <li class="nav__list"><a class="nav__link" href="#">Features</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#about">About</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#pricing">Pricing</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#">Reviews</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- <div class="container__nav"> -->
+            <a class="header__wrapper-logo" href="index.html"> <img class="header__logo" src="./img/Logo-site.svg"
+                    alt="Логотип AXIT"></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Reviews</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- </div> -->
         </div>
     </header>
     <!-- Следующий раздел -->
     <main>
-        <section class="modern__template">
+        <section class="banner">
             <div class="container">
-                <div class="wrapper__modern-template">
-                    <div class="container__modern-template">
-                        <img class="modern__template-logo" src="/img/Logo-site.svg" alt="Логотип сайта">
-                        <h1 class="modern-template-title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                        <p class="modern-template-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <button class="download-btn">Download</button>
+                <!-- <div class="wrapper__modern-template"> -->
+                <div class="banner__info">
+                    <div class="wrapper__banner-logo">
+                        <img class="banner__logo" src="/img/Logo-site.svg" alt="Логотип сайта">
                     </div>
-                    <div class="container__form">
-                        <p class="text__for-container">Try Your <span>FREE</span> Trial Today</p>
-                        <form id="form" class="form__modern__template">
-                                <div class="data__person">
-                                    <div class="form__group">
-                                        <input type="text" id="name" name="name" placeholder="Name">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="email" id="email" name="email" placeholder="Email">
-                                    </div>
-                                    <div class="form__group">
-                                        <input type="password" id="password" name="password" placeholder="Password">
-                                    </div>
-                                </div>
-                        </form>
-                        <button form="form" class="btn__modern__template">Get Started</button>
-                    </div>
+                    <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                    <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button class="banner__btn">Download</button>
                 </div>
+                <div class="banner__wrapper-form">
+                    <h3 class="banner__form-title">Try Your <span>FREE</span> Trial Today</h3>
+                    <form id="form" class="banner__form form">
+                        <input class="banner__form-input form__input" type="text" id="name" name="name" placeholder="Name">
+                        <input class="banner__form-input form__input" type="email" id="email" name="email" placeholder="Email">
+                        <input class="banner__form-input form__input" type="password" id="password" name="password" placeholder="Password">
+                    </form>
+                    <button form="form" class="banner__form-btn">Get Started</button>
+                </div>
+                <!-- </div> -->
             </div>
 
         </section>
@@ -73,49 +67,52 @@
         <!-- конец -->
         <!-- Social Media -->
         <section class="social__media">
-            <div class="container__social">
-                <div class="social__media-content">
-                    <h3 class="social__media-title">Social Media</h3>
-                    <p class="social__media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenean euismod bibendum laoreet.</p>
+            <div class="container">
+                <div class="container__social">
+                    <div class="social__media-info">
+                        <h3 class="social__media-title">Social Media</h3>
+                        <p class="social__media-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.</p>
+                    </div>
+                    <ul class="social__media-list">
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="./img/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="./img/Twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="" class="social-media__link">
+                                <img src="./img/Linkedln.svg
+                                " alt="Linkedln">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="./img/Pinterest.svg" alt="Pinterest">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="./img/Instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="./img/GitHub.svg" alt="GitHub">
+                            </a>
+                        </li>
+                        <li class="social__media-item">
+                            <a href="#" class="social-media__link">
+                                <img src="/img/Rss.svg" alt="rss">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="social__media-icons">
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="./img/facebook.png" alt="facebook">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="./img/Twitter.png" alt="Twitter">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="" class="social__media-link">
-                            <img src="./img/Linkedln.png" alt="Linkedln">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="./img/Pinterest.png" alt="Pinterest">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="./img/Instagram.png" alt="Instagram">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="./img/GitHub.png" alt="GitHub">
-                        </a>
-                    </li>
-                    <li class="social__media-links">
-                        <a href="#" class="social__media-link">
-                            <img src="/img/Rss.png" alt="rss">
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
         <!-- конец -->
@@ -123,7 +120,7 @@
         <div class="tabs">
             <div class="container">
                 <div class="tabs__navigation">
-                    <a class="tabs__link" href="#">TAB1</a>
+                    <a class="tabs__link tabs__link-active" href="#">TAB1</a>
                     <a class="tabs__link" href="#">TAB2</a>
                     <a class="tabs__link" href="#">TAB3</a>
                 </div>
@@ -316,46 +313,37 @@
             </div>
         </section>
         <!-- Раздел дизайна -->
-        <section class="style__design">
-            <div class="container__design">
-                <h2 class="style__design-title">STYLISH AXURE DESIGN</h2>
-                <p class="style__design-text">Use the sections you need, remove the ones you don't. Create gorgeous
-                    prototypes
-                    faster than ever!</p>
-                <button class="style__design-btn">Download</button>
+        <section class="style-design">
+            <div class="container">
+                <div class="container__design">
+                    <h2 class="style-design__title">STYLISH AXURE DESIGN</h2>
+                    <p class="style-design__text">Use the sections you need, remove the ones you don't. Create gorgeous
+                        prototypes
+                        faster than ever!</p>
+                    <button class="style-design__btn">Download</button>
+                </div>
             </div>
         </section>
 
         <!-- конец -->
         <!-- contact us -->
-        <section class="section__contact-us">
+        <section class="contact">
             <div class="container">
-                <h2 class="section__contact-title">CONTACT US</h2>
-                <p class="section__contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 class="contact__title">CONTACT US</h2>
+                <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-                <form class="form">
-                    <div class="wrapper__data-person">
-                        <div class="contact__form-wrapper">
-                            <div class="data__person">
-                                <div class="form__group-item">
-                                    <input type="text" id="name" name="name" placeholder="Name">
-                                </div>
-                                <div class="form__group-item">
-                                    <input type="email" id="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="form__group-item">
-                                    <input type="password" id="password" name="password" placeholder="Password">
-                                </div>
-                            </div>
+                <form class="contact__form form">
+                    <div class="contact__form-wrapper form-wrappe">
+                        <div class="contact__form-inputs form-inputs ">
+                            <input class="contact__form-input" type="text" id="name" name="name" placeholder="Name">
+                            <input class="contact__form-input" type="email" id="email" name="email" placeholder="Email">
+                            <input class="contact__form-input" type="password" id="password" name="password"  placeholder="Password">
+                            
                         </div>
-                        <div class="message__person">
-                            <div class="form__group-item ">
-                                <input type="text" id="message" name="message" placeholder="Message">
-                            </div>
-                        </div>
+                        <textarea class="contact__form-textarea form-textarea" placeholder="Message"></textarea>
                     </div>
 
-                    <button type="submit" class="button__send-message">Send Message</button>
+                    <button type="submit" class="contact__form-btn form-btn ">Send Message</button>
                 </form>
             </div>
         </section>
@@ -368,42 +356,37 @@
     <footer class="footer__site">
         <div class="container">
             <div class="footer__container">
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/facebook.png" alt="facebook">
+                   
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/facebook.svg" alt="Twitter">
                     </a>
-                </div>
-
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/Twitter.png" alt="Twitter">
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/Twitter.svg" alt="Twitter">
                     </a>
-                </div>
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/Linkedln.png" alt="Linkedln">
+               
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/Linkedln.svg" alt="Linkedln">
                     </a>
-                </div>
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/Pinterest.png" alt="Pinterest">
+               
+                
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/Pinterest.svg" alt="Pinterest">
                     </a>
-                </div>
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/Instagram.png" alt="Instagram">
+                
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/Instagram.svg" alt="Instagram">
                     </a>
-                </div>
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/GitHub.png" alt="GitHub">
+               
+                
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/GitHub.svg" alt="GitHub">
                     </a>
-                </div>
-                <div class="list__social-media">
-                    <a class="social__media-link" href="#">
-                        <img class="icon__social-media" src="./img/Rss.png" alt="Rss">
+                
+                
+                    <a class="social-media__link" href="#">
+                        <img class="icon__social-media" src="./img/Rss.svg" alt="Rss">
                     </a>
-                </div>
+                
             </div>
             <p class="footer__text">© 2015 Axure Themes</p>
         </div>

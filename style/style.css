@@ -9,25 +9,29 @@ body {
 }
 
 /* Header сайта домашнее задане номер 7*/
-.header__site {
-    position: relative;
+.header{
+    position: sticky;
     background-color: #000;
-
+    padding: 15px 0;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.logo__site-img {
+.header__logo {
     width: 87px;
     height: 31px;
 }
 
-.container__nav {
-    padding: 15px 0;
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navigation__site ul {
+.nav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -35,52 +39,73 @@ body {
 
 }
 
-.navigation__site a {
+.nav a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
+    line-height: 20px;
+    padding: 0 15px;
+
+
+}
+
+.nav__list a:hover {
+    background-color: #ab7979;
+    text-transform: uppercase;
+    padding: 23px;
+
+}
+
+.nav a:active {
+    background-color: #ab4949;
+    text-transform: uppercase;
+    padding: 23px;
+
 
 }
 
 /* Следующий раздел  домашнее задание номер 7-8*/
-.modern__template {
+.banner{
     position: relative;
     background: url("/img/Background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    padding: 306px 0 185px;
+    left: 0;
+    top: 0;
+
 
 
 }
 
-.container__modern-template {
+.banner__info{
     max-width: 670px;
     position: relative;
 }
 
-.modern__template::before {
+.banner::before {
     content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-
-
+    left: 0;
+    top: 0;
 }
 
-.modern__template-logo {
+.wrapper__banner-logo {
     margin-bottom: 50px;
-    margin-top: 125px;
     width: 170px;
     height: 55px;
 }
 
 
-.modern-template-title {
+.banner__title{
+    position: relative;
     font-weight: 500;
     font-size: 48px;
     line-height: 100%;
@@ -88,26 +113,29 @@ body {
     color: #fff;
 }
 
-.modern-template-title::after {
+.banner__title::after {
     content: "";
     display: inline-block;
-   border: 1px solid #fff;
+    border: 1px solid #fff;
     width: 170px;
     position: absolute;
-    top: 440px;
+    top: 100%;
     left: 0;
+    transform: translateY(55px);
 }
 
-.modern-template-text {
+.banner__text {
     width: 100%;
     max-width: 270px;
     font-weight: 400;
     font-size: 18px;
     color: #fff;
     margin-bottom: 42px;
+    line-height: 21px;
+
 }
 
-.download-btn {
+.banner__btn{
     width: 100%;
     max-width: 270px;
     font-size: 18px;
@@ -118,77 +146,80 @@ body {
     padding: 10px 10px;
     border: 2px solid #fff;
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 107px;
+
 }
 
-.download-btn:hover {
+.banner__btn:hover {
     color: #ec7979;
     border-color: #ec7979;
 }
 
-.download-btn:active {
+.banner__btn:active {
     color: #fff;
     background-color: #ab4949;
     border-color: #ab4949;
 }
+
 /* Домашнее задание номер 8 */
-.wrapper__modern-template {
+section.banner .container {
 
     display: flex;
     gap: 28px;
     align-items: center;
 
 }
+.banner__wrapper-form {
+    padding-top: 36px;
+    width: 100%;
+    max-width: 470px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
 
-.form__modern__template {
+.banner__form {
     text-align: center;
 }
-.form__modern__template:last-of-type{
+
+.banner__form:last-of-type {
     margin-bottom: 75px;
 
 }
 
-.text__for-container {
+.banner__form-title {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     color: #333;
     margin-bottom: 75px;
+    line-height: 33px;
+
 }
 
-.text__for-container span {
+.banner__form-title span {
     color: #EC7979;
+    line-height: 33px;
 }
 
-.container__form {
-    padding-top: 36px;
-    z-index: 2;
-    width: 470px;
-    background-color: #fff;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-}
-/* .contact__form-wrapper:last-of-type{
-    margin-bottom: 75px;
-} */
 
-.data__person input {
-    width: 370px;
-    margin-bottom: 32px;
-    padding-bottom: 16px;
+
+input {
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 18px;
+    padding: 16px 0;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #bdbdbd;
     border: none;
     border-bottom: 1px solid #bdbdbd;
     outline: none;
 }
 
 
-.btn__modern__template {
+.banner__form-btn {
     width: 100%;
     padding: 22px;
     border: none;
@@ -197,33 +228,39 @@ body {
     font-size: 16px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
+    line-height: 20px;
+
+
 
 }
 
-.btn__modern__template:hover {
+.banner__form-btn:hover {
     background-color: #ab4949;
 }
 
-.btn__modern__template:active {
+.banner__form-btn:active {
     background: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
+
 /* -------------------------------------------------------- */
 /* Конец */
 /* social Media домашнее задание номер 7 */
 .container__social {
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    align-items: center;
     gap: 30px;
+    justify-content: space-between;
 }
+
 .social__media {
     padding: 32px 0 18px;
     background-color: #f8efef;
+    margin-bottom: 100px;
 
 }
-.social__media-content {
+
+.social__media-info {
     max-width: 470px;
 }
 
@@ -233,17 +270,21 @@ body {
     font-size: 24px;
     color: #333;
     margin-bottom: 16px;
+    line-height: 33px;
 
 }
 
 .social__media-text {
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: 18px;
     color: #86878B;
+    line-height: 21px;
+
+
+
 }
 
-.social__media-icons {
+.social__media-list {
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -251,13 +292,21 @@ body {
     gap: 30px;
 }
 
-.social__media-link {
+.social-media__link {
     display: flex;
     width: 70px;
     height: 70px;
     justify-content: center;
     align-items: center;
 
+}
+
+.social-media__link:hover {
+    background-color: #ab7979;
+}
+
+.social-media__link:active {
+    background-color: #AB4949;
 }
 
 /* Конец */
@@ -288,6 +337,24 @@ body {
     width: 100%;
     max-width: 203px;
     padding: 10px;
+}
+
+a.tabs__link.tabs__link-active::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: #fff;
+
+}
+
+.tabs__link-active {
+    border: 1px solid #c6cbcd;
+    border-radius: 5px 5px 0 0;
+    position: relative;
 }
 
 .tab__wrapper-text {
@@ -459,7 +526,7 @@ p.tab__text:last-of-type {
 }
 
 .pricing__coast {
-   
+
     padding: 28px;
     border-bottom: 2px solid #f5f5f5;
     font-weight: 700;
@@ -589,7 +656,7 @@ article .feedback {
 }
 
 /* Раздел Дизайна домашнее задание номер 7 */
-.style__design-title {
+.style-design__title {
     color: #fff;
     font-size: 36px;
     font-weight: 400;
@@ -600,18 +667,20 @@ article .feedback {
 
 }
 
-.style__design-title::after {
+.style-designtitle::after {
     content: "";
     display: inline-block;
     height: 2px;
     width: 170px;
     background-color: #fff;
     position: absolute;
-    top: calc(100% + 40px);
-    left: calc(50% - 85px);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50px, 40px);
+
 }
 
-.style__design-text {
+.style-design__text {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
@@ -619,7 +688,7 @@ article .feedback {
     line-height: 21px;
 }
 
-.style__design-btn {
+.style-design__btn {
     width: 100%;
     max-width: 370px;
     font-size: 18px;
@@ -637,18 +706,18 @@ article .feedback {
     z-index: 2;
 }
 
-.style__design-btn:hover {
+.style-design__btn:hover {
     color: #ec7979;
     border-color: #ec7979;
 }
 
-.style__design-btn:active {
+.style-design__btn:active {
     color: #fff;
     background-color: #ab4949;
     border-color: #ab4949;
 }
 
-.style__design {
+.style-design {
     position: relative;
     background-image: url('/img/fon-design.png');
     padding: 70px 0;
@@ -656,7 +725,7 @@ article .feedback {
     margin-bottom: 67px;
 }
 
-.style__design::before {
+.style-design::before {
     content: "";
     display: block;
     width: 100%;
@@ -668,19 +737,26 @@ article .feedback {
 }
 
 .container__design {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    z-index: 2;
+    text-align: center;
     position: relative;
 }
 
 /* Конец */
 /* contact us  домашнее задание ноиер 8 */
-.section__contact-us {
+.contact {
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.section__contact-title {
+/* .contact__form-wrapper{
+    max-width: 571px;
+    flex-grow: 1;
+} */
+
+
+
+.contact__title {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
@@ -690,7 +766,7 @@ article .feedback {
     margin-bottom: 80px;
 }
 
-.section__contact-title::after {
+.contact__title::after {
     content: '';
     position: absolute;
     bottom: -40px;
@@ -701,7 +777,7 @@ article .feedback {
 
 }
 
-.section__contact-text {
+.contact__text {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 89px;
@@ -709,34 +785,55 @@ article .feedback {
     color: #86878B;
 }
 
-.form {
+.contact_form {
     text-align: center;
 
 }
 
-.wrapper__data-person {
+.contact__form-wrapper {
     display: flex;
     gap: 30px;
+    margin-bottom: 50px;
+    flex-grow: 1;
+
+
 }
 
-.form__group-item input {
-    width: 571px;
-    margin-bottom: 50px;
+input.contact__form-inputs {
+    width: 100%;
+    margin-bottom: 34px;
+    padding: 16px 0;
     padding-bottom: 16px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    color: #bdbdbd;
+    resize: none;
+    color: #000;
     border: none;
     border-bottom: 1px solid #bdbdbd;
     outline: none;
+    line-height: 19px;
 }
 
-.message__person input {
-    padding-bottom: 188px;
 
+textarea.form-textarea {
+    flex-grow: 1;
+    max-width: 571px;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    resize: none;
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
 }
 
-.button__send-message {
+textarea.form-textarea::placeholder {
+    color: #bdbdbd;
+}
+
+
+.contact__form-btn {
     width: 370px;
     padding: 18px;
     background-color: #ec7979;
@@ -748,14 +845,15 @@ article .feedback {
 
 }
 
-.button__send-message:hover {
+.contact__form-btn:hover {
     background-color: #ab4949;
 }
 
-.button__send-message:active {
+.contact__form-btn:active {
     background: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
+
 /* -------------------------------------------------------- */
 /* конец */
 
@@ -787,5 +885,8 @@ article .feedback {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
 }
+
 /* Конец */
