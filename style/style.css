@@ -13,7 +13,8 @@ body {
 }
 /*Header HW7*/
 .axit-header{
-    position: relative;
+    position: fixed;
+    width: 100%;
     background-color: #000;
     top: 0;
     z-index: 1;
@@ -72,41 +73,60 @@ section.axit-main .container{
   max-width: 670px;
 }
 .axit-main__wrapper-form{
-   
   max-width: 470px;
   width: 100%;
-  max-height: 450px;
-  align-items: center;
-  border-radius: 3%;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
   padding-top: 36px;
 }
 .axit-main__form-text{
-  display: flex;
-  justify-content: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 75px;
+  padding: 0 50px;
+  text-align: center;
 }
 .axit-main__form-text span{
   color: #EC7979;
-  display: inline-block;
-  margin: 0 7.5px;
 }
+div.axit__main-inputs{
+  margin-bottom: 75px;
+  padding: 0 50px;
+}
+.axit__main-form input{
+  padding: 16px;
+  width: 100%;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+  outline: none;
+}
+.axit__main-form input:hover{
+  border: none;
+  border-bottom: 1px solid #EC7979;
+}
+.axit__main-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #AB4949;
+}
+
 .axit-main__form-btn{
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  height: 60px;
+  padding: 18px;
   width: 100%;
   border: none;
   color: #fff;
   background-color: #EC7979;  
-  margin-top: 75px;
+  cursor: pointer;
 }
 .axit-main__title{
   font-size: 48px;
@@ -143,6 +163,7 @@ width: 100%;
   margin-top: 42px;
   padding: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 .axit-main__wrapper-logo{
   width: 170px;
@@ -168,8 +189,6 @@ width: 100%;
     background-color: #AB4949;
 }
 .axit-footer__links{
-  max-width: 670px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -180,9 +199,9 @@ width: 100%;
   padding-top: 32px;
   padding-bottom: 18px;
 }
-.axit-footer__container{
-  padding: 0 170px;
+.axit-footer .container{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .axit-footer__info-wrapper{
@@ -309,8 +328,6 @@ width: 100%;
     color: #000;
     text-decoration: none;
     text-align: center;
-    border: 1px solid #C6CBCD;
-    border-bottom: #fff;
     border-radius: 5px 5px 0px 0px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -320,6 +337,11 @@ width: 100%;
     width: 100%;
     max-width: 203px;
     padding: 10px;
+}
+.tabs__link--active{
+  border: 1px solid #C6CBCD;
+  border-bottom: 1px solid #fff;
+  
 }
 .tab{
     display: flex;
@@ -372,4 +394,274 @@ width: 100%;
     width: 100%;
     max-width: 270px;
     padding: 16.5px;
+    cursor: pointer;
 }
+.tab__button:hover{
+  background-color:#AB4949;
+}
+.tab__button:active{
+  background-color:#EC7979;
+}
+section.info .container{
+  margin-bottom: 130px
+}
+
+section.pricing {
+  background-color: #F5F5F5;
+  padding-bottom: 82px;
+  padding-top: 82px;
+  margin-bottom: 87px;
+}
+.pricing__main-title{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+.pricing__line{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    border: none;
+
+}
+.pricing__text{
+    margin-bottom: 79px;
+    text-align: center;
+    font-size: 18px;
+    color: #86878B;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+.pricing__card{
+    max-width: 370px;
+    width: 100%;
+}
+.pricing__name{
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 14px 10px;
+}
+.pricing__cost{
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 27px 10px;
+    line-height: 42px;
+}
+.pricing__free{
+    background-color: #333;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px 10px;
+}
+.pricing__card-option{
+    color: #86878B;
+    background-color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 14px 10px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid #F5F5F5;
+}
+.pricing__cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.customers__title{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+.customers__line{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    border: none;
+
+}
+.customers__text{
+    margin-bottom: 83px;
+    text-align: center;
+    font-size: 18px;
+    color: #86878B;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+.customers__managers{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.customers__manager-info{
+    
+    max-width: 370px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.customers__manager-text{
+    color: #86878B;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 38px 25px 37px 25px;
+    background-color: #E2E2E2;
+    border-radius: 16px;
+    margin-bottom: 66px;
+    position: relative;
+    
+}
+.customers__manager-text::after {
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 30px solid #E2E2E2;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+}
+.customers__manager-photobiography{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+.customers__image{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.customers__ideapoint{
+    margin-left: 70px;
+    margin-bottom: 46px;
+}
+.customers__manager-name{
+    font-size: 24px;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+.customers__manager-position{
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+section.customers .container{
+  margin-bottom: 127px;
+}
+
+
+section.stylish {
+  background-image: url("/images/stylish_img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+    left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken; 
+}
+
+section.stylish .container{
+  padding: 70px 170px 70px 170px;
+}
+.stylish__main-title{
+    font-size: 36px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 42px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.stylish__line{
+  margin: 0 auto;
+    margin-bottom: 40px;
+    width: 170px;
+    height: 1px;
+    background-color: #fff;
+    border: none;
+}
+.stylish__text{
+  margin-bottom: 80px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+.stylish__btn{
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px 0;
+  max-width: 370px;
+  width: 100% ;
+  cursor: pointer;
+  
+}
+.stylish__btn:hover{
+  border-color: #EC7979;
+  color: #EC7979;
+}
+.stylish__btn:active{
+  border-color: #AB4949;
+  background-color: #AB4949;
+  color: #fff;
+}
+.stylish__btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
