@@ -16,7 +16,7 @@
 
       .header {
         background-color: #000000;
-        padding: 20px;
+        padding: 20px 0;
       }
 
       .header .container {
@@ -104,8 +104,8 @@
 
       .banner__btn {
         margin-top: 42px;
-        width: 270px;
-        max-width: 100%;
+        width: 100%;
+        max-width: 270px;
         color: #FFFFFF;
         font-size: 18px;
         font-family: "Open Sans", sans-serif;
@@ -775,6 +775,7 @@
       overflow: hidden;
       align-items: center;
       justify-content: center;
+      display: flex;
     }
 
     .footer__link:hover path {
