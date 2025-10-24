@@ -40,6 +40,7 @@ body {
     color: #333333;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 
@@ -107,6 +108,7 @@ body {
     border: none;
     width: 100%;
     padding: 16.5px;
+    cursor: pointer;
 }
 
 .feature__btn:hover {
@@ -133,7 +135,7 @@ body {
 
 
 .promo {
-    margin-bottom: 110px;
+     margin-bottom: 110px;
      scroll-margin-top: 150px;
 }
 
@@ -460,9 +462,10 @@ body {
     background-color: #000;
     padding: 22px 0;
     position: fixed;
+    left: 0;
+    top: 0;
     z-index: 3;
     width: 100%;
-    scroll-margin-top: 150px;
 }
 
 .header__container {
@@ -594,6 +597,7 @@ color: #EC7979;
     border: 2px solid #FFFFFF;
     padding:15px;
     width: 100%;
+    cursor: pointer;
 }
 
 
@@ -697,6 +701,7 @@ color: #EC7979;
     background-color: #EC7979;
     padding: 15px 0;
     border-radius: 0 0 10px 10px;
+    cursor: pointer;
 }
 
 .form__btn:hover {
@@ -732,7 +737,7 @@ color: #EC7979;
     width: 100%; 
 }
 
-.social-media-heading {
+.social-media__heading {
     font-family: 'Open Sans',sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -742,7 +747,7 @@ color: #EC7979;
     margin-bottom: 16px;
 }
 
-.social-media-text {
+.social-media__text {
     font-family: 'Raleway',sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -750,7 +755,7 @@ color: #EC7979;
     color: #86878B;
 }
 
-.social-media-list {
+.social-media__list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -892,6 +897,7 @@ svg:active path {
     display: block;
     padding: 16.5px 124px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .contacts__submit:hover {
@@ -909,19 +915,13 @@ svg:active path {
     padding: 35px 0  27px;
 }
 
-.footer__container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: max-content;
-}
 
 
 .footer__list {
     display: flex;
     column-gap: 33px;
     margin-bottom: 28px;
+    justify-content: center;
 }
 
 .list__link {
@@ -1014,6 +1014,7 @@ svg:active path {
     background: transparent;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .design__btn:hover {
