@@ -1,15 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Axit project</title>
-</head>
+    <title>Sections</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/styles.css">
 
+</head>
 <body>
+     <!-- Header-->
+    <header class="header">
+        <div class="container">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="./imges/logo.svg" alt="logo AXIT">
+            </a>
+            <nav class="nav">
+                <ul class="nav__lists">
+                    <li class="nav__iten"><a href="#" class="nav__link">Features</a></li>
+                    <li class="nav__iten"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__iten"><a href="#" class="nav__link">Pricing</a></li>
+                    <li class="nav__iten"><a href="#" class="nav__link">Reviews</a></li>
+                    <li class="nav__iten"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Banner-->
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner__info">
+                    <div class="banner__wrapper-logo">
+                        <img class="banner__logo-img" src="/imges/logo.svg" alt="Логотип сайта">     
+                    </div>
+                    <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                    <p class="banner__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <button class="banner__button">Download</button>
+                </div>
+                <form class="banner__form">
+                    <div class="banner__form-fill">
+                        <h3 class="banner__form-title">TRY YOUR <span class="banner__form-title-highlight">FREE</span> TRIAL TODAY</h3>
+                        <div class="banner__form-group">
+                            <input class="banner__form-input" placeholder="Name" required>
+                            <input class="banner__form-input" placeholder="Email" required>
+                            <input class="banner__form-input" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <button class="banner__form-button">Get Started</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Social Media -->
+        <section class="social-media">
+            <div class="container">
+                <div class="social-media__content">
+                    <h2 class="social-media__title">Social Media</h2>
+                    <p class="social-media__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                    </p>
+                </div>
+                <ul class="social-media__icons">
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="./imges/Facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="./imges/Twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="" class="social-media__link">
+                            <img src="./imges/LinkedIn.png" alt="Linkedln">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="./imges/Pinterest.png" alt="Pinterest">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="./imges/Instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="./imges/GitHub.png" alt="GitHub">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link">
+                            <img src="/imges/Rss.png" alt="rss">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <!-- Блок  секции "tabs"-->
+    <div class="info tab-section">
+        <div class = "info">
+            <div class="container">
+                <div class="info__tabs">
+                    <a class="info__tab active" href="">Tab 1</a>
+                    <a class="info__tab" href="">Tab 2</a>
+                    <a class="info__tab" href="">Tab 3</a>
+                </div>
+                <div class="box">
+                    <div class="box__wrapper-text">
+                        <h3 class="box__title">Tabs with soft transitioning effect.</h3>
+                        <p class="box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque  penatibus et magnis dis parturient montes.
+                        </p>
+                        <p class="box__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod  bibendum laoreet.
+                        </p>
+                        <button class="box__button">Download</button>
+                    </div>
+                    <div class="box__wrapper-image">
+                        <img class="box__image" src="/imges/img.png" alt="image error">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок awesome-->
+    <div class="info awesome-section">
+        <section class = "info">
+            <div class="container">
+                <h2 class="title">WHY THIS IS AWESOME</h2>
+                <div class="line"></div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="cards">
+
+                    <!-- Первая карточка -->
+                <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/imges/icon_1.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image1">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                        </p>
+                    </div>
+
+                    <!-- Вторая карточка -->
+                    <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/imges/icon_2.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image2">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                        <p class="card__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.
+                        </p>
+                    </div>
+
+                    <!-- Третья карточка -->
+                    <div class="card">
+                        <div class="card__wapper-image">
+                            <img 
+                            src="/imges/icon_3.png" 
+                            alt="Thoughtful Design" 
+                            class="card__image3">                
+                        </div>
+                        <h3 class="card__title">Thoughtful Design</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Блок 'Pricing options'-->
+        <section class = "pricing info">
+            <div class="container">
+                <h2 class="title">PRICING OPTIONS</h2>
+                <div class="line"></div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="pricing__cards">
+                    <div class="pricing__card">
+                        <h3 class="pricing-card__header">Basic</h3>
+                        <div class="pricing-card__amount">$10</div>
+                        <p class="pricing-card__duration">Free for life</p>
+                        <ul class="pricing-card__features">
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                            <li class="pricing-card__feature">1 Gb Of Space</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing__card pricing__card--center">
+                    <h3 class="pricing-card__header">Optima</h3>
+                    <div class="pricing-card__amount">$20</div>
+                    <p class="pricing-card__duration">Free for life</p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                    </ul>
+                </div>
+
+                <div class="pricing__card">
+                    <h3 class="pricing-card__header">Pro</h3>
+                    <div class="pricing-card__amount">$30</div>
+                    <p class="pricing-card__duration">Free for life</p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                        <li class="pricing-card__feature">1 Gb Of Space</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Блок Customers-->
+    <section class="customers info">
+        <div class="container">
+            <h2 class="title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+            <div class="line"></div>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="testimonials">
+                <!-- Первый отзыв -->
+                <div class="testimonial">
+                    <div class="testimonial__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <img src="/imges/avatar1.png" alt="Davis Rhiel Madsen">
+                        </div>
+                        <div class="testimonial__info">
+                            <h3 class="testimonial__name">Davis Rhiel Madsen</h3>
+                            <p class="testimonial__position">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Второй отзыв -->
+                <div class="testimonial">
+                    <div class="testimonial__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <img src="/imges/avatar2.png" alt="Jaydon Rosser">
+                        </div>
+                        <div class="testimonial__info">
+                            <h3 class="testimonial__name">Jaydon Rosser</h3>
+                            <p class="testimonial__position">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Третий отзыв -->
+                <div class="testimonial">
+                    <div class="testimonial__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">
+                            <img src="/imges/avatar3.png" alt="Cooper Dorwart">
+                        </div>
+                        <div class="testimonial__info">
+                            <h3 class="testimonial__name">Cooper Dorwart</h3>
+                            <p class="testimonial__position">Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Design Section -->
+        <section class="design">
+            <div class="container">
+                <h2 class="design__title">STYLISH AXURE DESIGN</h2>
+                <div class="design__line"></div>
+                <p class="design__text">
+                    Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+                </p>
+                <button class="design__button">Download</button>
+            </div>
+        </section>
+
+        <!-- Contact us-->
+        <section class="contact">
+            <div class="container">
+                <h2 class="contact__title">CONTACT US</h2>
+                <div class="contact__line"></div>
+                <p class="contact__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <form class="contact-form">
+                    <div class="contact-form__data">
+                        <div class="contact-form__group">
+                            <input type="text" class="contact-form__input" placeholder="Name">
+                            <input type="email" class="contact-form__input" placeholder="Email">
+                            <input type="password" class="contact-form__input" placeholder="Password">
+                        </div>
+                        <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="contact-form__button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__social-icons">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/Facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/Twitter.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/LinkedIn.png" alt="Linkedln">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/Pinterest.png" alt="Pinterest">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/Instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/GitHub.png" alt="GitHub">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-icon" src="./imges/Rss.png" alt="Rss">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__text">© 2015 Axure Themes</p>
+            </div>
+        </footer>
+    </main>
+   
 
 </body>
-
 </html>
+
