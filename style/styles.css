@@ -403,8 +403,9 @@ body {
     object-fit: cover;
 }
 .comment__author-text {
-    text-align: start;
+    text-align: left;
     max-width: 269px;
+    flex-grow: 1;
 }
 .comment__author-name {
     color: #000000;
@@ -420,4 +421,3 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
-
