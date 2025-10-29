@@ -94,6 +94,7 @@ body {
     border: 2px solid #FFFFFF;
     margin-top: 42px;
     margin-bottom: 185px;
+    cursor: pointer;
 }
 .hero__input {
     background-color: #FFFFFF;
@@ -141,7 +142,7 @@ body {
 .bunner__group:last-child {
     margin-bottom: 0;
 }
-.bunner_btn {
+.bunner__btn {
     color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -155,6 +156,49 @@ body {
     margin-top: 75px;
     border: none;
     border-radius: 0 0 16px 16px;
+    cursor: pointer;
+}
+.social-media {
+    background-color: #F8EFEF;
+    padding: 32px 0 18px;
+    margin-bottom: 100px;
+}
+.container__social-media {
+    display: flex;
+    column-gap: 30px;
+}
+.social-media__text{
+    max-width: 470px;
+}
+.social-media__title {
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.social-media__description {
+    color: #86878B;
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
+}
+.social-media__list {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.social-media__link {
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
 }
 .tabs {
     margin-bottom: 118px;
@@ -227,6 +271,7 @@ body {
     padding: 20px 0;
     border: none;
     margin-top: 84px;
+    cursor: pointer;
 }
 .tab__wrapper-image {
     max-width: 470px;
@@ -260,15 +305,14 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 92px;
     
 }
 .info-box {
-  
+    margin-top: 92px;
 }
 .info-box__item {
-  display: inline-block;
-  max-width: 371px;
+    display: inline-block;
+    max-width: 371px;
 }
 .info-box__wrapper-icon {
     width: 92px;
@@ -305,6 +349,7 @@ body {
     justify-content: center;
     gap: 30px;
     align-items: flex-start;
+    margin-top: 79px;
 }
 .card {
     max-width: 370px;
@@ -362,6 +407,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 83px;
 }
 .comment {
     max-width: 370px;
@@ -420,4 +466,107 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+.design {
+    text-align: center;
+    margin-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0 70px;
+}
+ .main-title__white,  .line__white, .text__white {
+    color: #FFFFFF;
+ }
+ .design__btn {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 370px;
+    width: 100%;
+    padding: 16.5px 0;
+    border: solid 2px #FFFFFF;
+    margin-top: 80px;
+    cursor: pointer;
+ }
+.contact {
+    text-align: center;
+    padding:67px 0;
+}
+.contact__form {
+  display: flex;
+  gap: 30px;
+  margin-top: 89px;
+}
+.contact__group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 50px;
+}
+.contact__input {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+}
+.contact__textarea {
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    outline: none;
+    resize: none;
+     flex: 1;
+}
+.contact__btn {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    background-color: #EC7979;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 370px;
+    width: 100%;
+    padding: 16.5px 0;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.footer {
+    background-color: #000000;
+    padding: 31px 0;
+}
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    list-style: none;
+    margin-bottom: 28px;
+}
+.footer__link {
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    overflow: hidden;
+}
+.footer__text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 }
