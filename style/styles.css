@@ -152,11 +152,14 @@ body {
       width: 100%;
       border: none;
       border-bottom: 1px solid #BDBDBD;
-      padding-bottom: 17px;
+      padding: 16px 0 16px;
       line-height: 19px;
       font-size: 14px;
       outline: none;
-      margin-bottom: 32px;
+      margin-bottom: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 19px;
 }
 .hero__input:last-child {
     margin-bottom: 0;
