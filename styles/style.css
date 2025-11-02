@@ -29,56 +29,48 @@
     height: 0px;
     margin: 0 auto 40px;
 }
-.cards__container{
-    height: 100%;
+.customers__text--container{
     display: flex;
+    margin-top: 83px;
+    height: 130%;
     justify-content: center;
+    justify-items: space-between;
+}
+.customer__cards{
+    display: flex;
+    justify-content: space-between;
     gap: 30px;
-    margin-top: 59px;
-    align-items: center;
-    flex-wrap: nowrap;
+
 }
-ul{
-    list-style: none;
-}
-li{
-    padding: 10px;
-    border-bottom: 1px solid #ffff;
-    border-left: 1px solid #ffff;
-    border-right: 1px solid #ffff;
-    font-weight: 200;
-    font-family: "Raleway", sans-serif;   
-}
-.card__title{
-    background-color: rgba(51, 51, 51, 1);
-    color: #ffff;
-    padding: 10px;
-    font-weight: bold;
-    border-bottom: 1px solid #ffff;
-    font-size: 20px;
-}
-.card__price{
-    background-color: rgba(51, 51, 51, 1);
-    color: #ffff;
-    padding: 20px;
-    font-weight: bold;
-    border-bottom: 1px solid #ffff;
-    font-size: 30px;
-}
-.card__subtext{
-    background-color: rgba(51, 51, 51, 1);
-    color: #ffff;
-    padding: 10px;
-    border-bottom: 1px solid #ffff;
+.card__text{
+    max-width: 370px;
+    text-align: center;
     font-size: 14px;
-    font-weight: 100;
-    font-family: "Raleway", sans-serif;
+    line-height: 21px;
+    font-weight: 300;
+    color: #86878B;
+    border-radius: 10px;
+    padding: 25px 20px;
+    background-color: #E2E2E2;
+    position: relative;
+    
 }
-.card_1, .card_2, .card_3{
-    width: 284px;
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+.card__text::after{
+    content: "";
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #E2E2E2 transparent;
+    top: 100%;
+    left: 10%;
+    transform: translateX(-50%);
+    position: absolute;
+    rotate: 180deg;
 }
-.card_2 {
-    transform: translateY(-20px);
+.customers__container{
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.customer__image{
 }
